@@ -11,10 +11,11 @@ import GHC.Generics (Generic)
 ------------------------------------------------------------------------
 
 data Recipe = Recipe
-  { id          :: Text
-  , meal        :: [Meal]
-  , kitchen     :: Maybe Kitchen
-  , ingredients :: [Text]
+  { id           :: Text
+  , meal         :: [Meal]
+  , kitchen      :: Maybe Kitchen
+  , ingredients  :: [Text]
+  , instructions :: Maybe [Text]
   }
   deriving (Eq, Show, Generic, ToJSON, FromJSON)
 

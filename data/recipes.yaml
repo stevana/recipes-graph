@@ -1,6 +1,6 @@
 - id: Shakshouka
   kitchen: Middle_Eastern
-  meal: 
+  meal:
     - Breakfast
     - Lunch
     - Brunch
@@ -14,7 +14,7 @@
     - poach eggs in sauce
 
 - id: Goulash
-  meal: 
+  meal:
     - Dinner
   kitchen: Central_European
   time: long
@@ -22,7 +22,7 @@
     - onions
 
 - id: Bolognese
-  meal: 
+  meal:
     - Lunch
     - Dinner
   kitchen: Italian
@@ -33,19 +33,19 @@
     - carrots
     - celery
     - milk
- 
+
 - id: Dan dan noodles
-  meal: 
+  meal:
     - Lunch
     - Dinner
   kitchen: Asian
   ingredients:
-    - sichuan chili oil 
+    - sichuan chili oil
     - mushrooms
     - noodles
 
 - id: Ramen
-  meal: 
+  meal:
     - Lunch
     - Dinner
   kitchen: Asian
@@ -56,19 +56,19 @@
     - pak choi
 
 - id: Zuccini kuchen
-  meal: 
+  meal:
     - Dessert
   ingredients:
     - zuccini
 
 - id: Empanadas
-  meal: 
+  meal:
     - Picnic
   ingredients:
     - red lentils
 
 - id: Quiche
-  meal: 
+  meal:
     - Picnic
   kitchen: French
   ingredients:
@@ -145,3 +145,26 @@
   ingredients:
     - aubergine
     - bechamel
+
+- id: Peanut sauce
+  kithcen: Asian
+  meal:
+    - Side
+  ingredients:
+    - Glug of oil
+    - 1/2 tsp Panch Puren
+    - 3 shallots
+    - 11 g ginger
+    - 4 cloves of garlic
+    - salt
+    - 1 tsp chili powder
+    - 3 Tbsp soy sauce
+    - 2 Tbsp mirin
+    - 3 Tbsp rice wine vinegar
+    - 100 g peanut butter
+    - 60 g water
+  instructions:
+    - blend everything
+    - vary water for desired consistency
+
+  source: Jack

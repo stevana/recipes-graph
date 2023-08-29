@@ -65,7 +65,7 @@ body :: [Recipe] -> Text
 body = T.unlines . map displayRecipe
 
 displayRecipe :: Recipe -> Text
-displayRecipe (Recipe name meals mKitchen ingredients_) = T.unlines $
+displayRecipe (Recipe name meals mKitchen ingredients_ mInstructions) = T.unlines $
   [ "<h3>" <> name <> "</h3>" ] ++
   [ maybe "" (\k -> "<i>(" <> T.replace "_" " " (text k) <>
                if null meals
@@ -74,7 +74,10 @@ displayRecipe (Recipe name meals mKitchen ingredients_) = T.unlines $
                ")</i>") mKitchen ] ++
   ["<ul>"] ++
   map (\i -> "<li>" <> i <> "</li>") ingredients_ ++
-  ["</ul>"]
+  ["</ul>"] ++
+  maybe [""] (\instructions_ ->
+                "<ol>" : map (\i -> "<li>" <> i <> "</li>") instructions_ ++ ["</ol>"])
+        mInstructions
 
 footer :: Text
 footer = "</body></html>"
