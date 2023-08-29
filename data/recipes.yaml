@@ -253,3 +253,22 @@
     - parsley
     - dry sherry
     - bread
+
+- id: Paprikash
+  kitchen: Central_European
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - chicken
+    - mushrooms
+    - onions
+    - butter
+    - sweet paprika
+    - green peppers
+    - tomatoes
+    - garlic
+    - flour
+    - sour cream
+    - spätzle
+    - pasta
