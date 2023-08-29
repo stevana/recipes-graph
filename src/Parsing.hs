@@ -14,17 +14,38 @@ data Recipe = Recipe
   { id           :: Text
   , meal         :: [Meal]
   , kitchen      :: Maybe Kitchen
+  , diet         :: [Diet]
   , ingredients  :: [Text]
   , instructions :: Maybe [Text]
   }
   deriving (Eq, Show, Generic, ToJSON, FromJSON)
 
-data Meal = Breakfast | Brunch | Lunch | Starter | Dinner | Side
-          | Dessert | Picnic
+data Meal
+  = Breakfast
+  | Brunch
+  | Lunch
+  | Starter
+  | Dinner
+  | Side
+  | Dessert
+  | Picnic
   deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON)
 
-data Kitchen = Asian | Italian | French | Central_European | Mexican
-             | Middle_Eastern | Greek
+data Kitchen
+  = Asian
+  | Central_European
+  | French
+  | Greek
+  | Italian
+  | Mexican
+  | Middle_Eastern
+  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON)
+
+data Diet
+  = Meat
+  | Vegetarian
+  | Vegan
+  | Gluten
   deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON)
 
 ------------------------------------------------------------------------
@@ -40,6 +61,18 @@ instance Finite Kitchen where
 
 instance Finite Meal where
   universe = enumFrom minBound
+
+instance Finite Diet where
+  universe = enumFrom minBound
+
+instance Finite Bool where
+  universe = [True, False]
+
+powerset :: Finite a => [[a]]
+powerset = go universe
+  where
+    go []       = [[]]
+    go (x : xs) = let ps = go xs in ps ++ map (x :) ps
 
 ------------------------------------------------------------------------
 

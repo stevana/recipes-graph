@@ -11,8 +11,8 @@ import Queries (allQueries, insertRecipe, withDB)
 ------------------------------------------------------------------------
 -- * Constants
 
--- | The input data directory, this is where the recipes and style sheets are
--- stored.
+-- | The input data directory, this is where the recipes, style sheets and
+--   javascript are stored.
 dATA_DIR :: FilePath
 dATA_DIR = "data"
 
@@ -21,6 +21,9 @@ rECIPES_FILE = "recipes.yaml"
 
 cSS_FILE :: FilePath
 cSS_FILE = "style.css"
+
+jS_FILE :: FilePath
+jS_FILE = "script.js"
 
 -- | The output data directory, this is where the generated database and html
 -- will be stored.
@@ -38,6 +41,9 @@ libMain = do
 
   css <- getDataFileName (dATA_DIR </> cSS_FILE)
   copyFile css (dIST_DIR </> cSS_FILE)
+
+  js <- getDataFileName (dATA_DIR </> jS_FILE)
+  copyFile js (dIST_DIR </> jS_FILE)
 
   yaml <- getDataFileName (dATA_DIR </> rECIPES_FILE)
   recipes <- parseRecipes yaml

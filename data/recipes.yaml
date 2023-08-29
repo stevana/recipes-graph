@@ -5,6 +5,8 @@
     - Lunch
     - Brunch
   time: simple
+  diet:
+    - Vegetarian
   ingredients:
     - tomatoes
     - eggs
@@ -17,6 +19,9 @@
   meal:
     - Dinner
   kitchen: Central_European
+  diet:
+    - Meat
+    - Vegetarian
   time: long
   ingredients:
     - oil
@@ -32,6 +37,9 @@
     - Dinner
   kitchen: Italian
   time: medium
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - oil
     - tomato paste
@@ -50,6 +58,9 @@
     - Lunch
     - Dinner
   kitchen: Asian
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - sichuan chili oil
     - mushrooms
@@ -59,6 +70,10 @@
   meal:
     - Lunch
     - Dinner
+  diet:
+    - Meat
+    - Vegetarian
+    - Vegan
   kitchen: Asian
   ingredients:
     - noodles
@@ -67,6 +82,8 @@
     - pak choi
 
 - id: Zuccini kuchen
+  diet:
+    - Vegetarian
   meal:
     - Dessert
   ingredients:
@@ -75,6 +92,9 @@
 - id: Empanadas
   meal:
     - Picnic
+  diet:
+    - Vegetarian
+    - Vegan
   ingredients:
     - red lentils
 
@@ -82,6 +102,8 @@
   meal:
     - Picnic
   kitchen: French
+  diet:
+    - Vegetarian
   ingredients:
     - leek
     - carrot
@@ -89,11 +111,14 @@
     - cheese
     - eggs
 
-- id: Sauerkrautsuppe
+- id: Sauerkraut soup
   meal:
     - Lunch
     - Dinner
   kitchen: Central_European
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - sauerkraut
 
@@ -101,6 +126,9 @@
   meal:
     - Dinner
   kitchen: Mexican
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - tortillas
 
@@ -108,6 +136,9 @@
   meal:
     - Dinner
   kitchen: Italian
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - pasta
     - mince
@@ -119,6 +150,8 @@
     - Lunch
     - Dinner
   kitchen: Italian
+  diet:
+    - Vegetarian
   ingredients:
     - oil
     - red onion
@@ -131,6 +164,9 @@
   meal:
     - Lunch
     - Dinner
+  diet:
+    - Meat
+    - Vegan
   ingredients:
     - beans
 
@@ -138,6 +174,8 @@
   meal:
     - Dinner
     - Side
+  diet:
+    - Vegan
   ingredients:
     - potatoes
 
@@ -146,6 +184,8 @@
   meal:
     - Lunch
     - Dinner
+  diet:
+    - Vegetarian
   ingredients:
     - capers
     - onion
@@ -156,6 +196,9 @@
   kitchen: Greek
   meal:
     - Dinner
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - olive oil
     - onion
@@ -177,9 +220,11 @@
     - potatoes
 
 - id: Peanut sauce
-  kithcen: Asian
+  kitchen: Asian
   meal:
     - Side
+  diet:
+    - Vegan
   ingredients:
     - Glug of oil
     - 1/2 tsp Panch Puren
@@ -196,11 +241,12 @@
   instructions:
     - blend everything
     - vary water for desired consistency
-
   source: Jack
 
 - id: Menemen
   kitchen: Middle_Eastern
+  diet:
+    - Vegetarian
   meal:
     - Breakfast
     - Brunch
@@ -216,6 +262,9 @@
   meal:
     - Dinner
     - Lunch
+  diet:
+    - Vegetarian
+    - Vegan
   ingredients:
     - onions
     - carrots
@@ -233,6 +282,8 @@
   kitchen: French
   meal:
     - Dinner
+  diet:
+    - Vegetarian
   ingredients:
     - mushrooms
     - butter
@@ -259,6 +310,9 @@
   meal:
     - Lunch
     - Dinner
+  diet:
+    - Meat
+    - Vegetarian
   ingredients:
     - chicken
     - mushrooms

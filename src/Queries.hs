@@ -49,22 +49,18 @@ withDB fp k = withConnection fp $ \conn -> do
 ------------------------------------------------------------------------
 -- * Insertion
 
-insertMeals :: Connection -> IO ()
-insertMeals conn = forM_ allMeals $ \meal_ -> do
-  let q = Query $ "INSERT INTO nodes VALUES(json('{\"id\": \"" <> T.pack (show meal_) <>
-                                                  "\", \"kind\": \"meal\"}'))"
-  execute_ conn q
-  where
-    allMeals :: [Meal]
-    allMeals = enumFromTo minBound maxBound
-
 insertRecipe :: Connection -> Recipe -> IO ()
 insertRecipe conn r = do
   execute conn "INSERT INTO nodes VALUES(json(?))" (Only (encode r))
   forM_ (meal r) $ \m -> do
     execute conn "INSERT INTO edges VALUES(?, ?, ?)" (Parsing.id r, text m, show EatenAt)
+  forM_ (diet r) $ \d -> do
+    execute conn "INSERT INTO edges VALUES(?, ?, ?)" (Parsing.id r, text d, show EatenBy)
 
 data EatenAt = EatenAt
+  deriving (Show)
+
+data EatenBy = EatenBy
   deriving (Show)
 
 ------------------------------------------------------------------------
@@ -81,6 +77,7 @@ queryName (SomeQuery qname _q) = qname
 allQueries :: Queries
 allQueries = Queries [ SomeQuery "Kitchen" queryKitchen
                      , SomeQuery "Meal"    queryMeal
+                     , SomeQuery "Diet"    queryDiet
                      ]
 
 queryAllRecipes :: Connection -> IO [Recipe]
@@ -106,6 +103,15 @@ queryMeal conn meals = do
   rs <- query_ conn q
   return (map (fromJust . decodeStrict . encodeUtf8 . T.concat) rs)
 
+queryDiet :: Connection -> [Diet] -> IO [Recipe]
+queryDiet conn diets = do
+  let clause = foldr (\m ih -> "target = '" <> text m <> "' OR " <> ih) "FALSE" diets
+      q = Query ("SELECT DISTINCT nodes.body FROM edges LEFT JOIN \
+                 \ nodes ON edges.source = nodes.id WHERE \
+                 \ edges.properties = 'EatenBy' AND " <> clause)
+  rs <- query_ conn q
+  return (map (fromJust . decodeStrict . encodeUtf8 . T.concat) rs)
+
 powerQuery :: Queries -> Queries
 powerQuery (Queries qs0) = Queries (go qs0)
   where
@@ -113,6 +119,7 @@ powerQuery (Queries qs0) = Queries (go qs0)
     go [] = []
     go (q : qs)
       = -- q
+      -- XXX: this equality should never hold unless there are duplicates in queries?
       concatMap (\q' -> if queryName q == queryName q' then [] else [intersectSomeQuery q q'])
                   (go qs)
       ++ go qs

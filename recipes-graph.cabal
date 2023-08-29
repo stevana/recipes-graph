@@ -18,6 +18,7 @@ extra-doc-files:
 
 data-files:
   data/recipes.yaml
+  data/script.js
   data/style.css
 
 common warnings

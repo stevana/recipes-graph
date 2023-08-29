@@ -17,7 +17,8 @@ import Utils
 
 header :: Text
 header = T.unlines
-  [ "<html>"
+  [ "<!doctype html>"
+  , "<html lang=\"en\">"
   , "  <head>"
   , "    <title>Recipes</title>"
   , "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />"
@@ -25,6 +26,7 @@ header = T.unlines
   , "    <link rel=\"stylesheet\" href=\"style.css\" />"
   , "  </head>"
   , "  <body>"
+  , "  <script src=\"script.js\"></script>"
   ]
 
 menu :: Queries -> String -> String -> Text
@@ -46,8 +48,9 @@ menu (Queries qs) selectedQname selectedQparam = T.unlines $
       flip map qs $ \(SomeQuery qname _q) -> T.concat $
         [ "<li><h5 class=\"category\">" <> T.pack qname <> "</h5>"
         , "  <ul>"
-        -- , "    <button onclick=\"alert('test')\"><li><a href=" <> T.pack qname <> "-Any.html>Any</a></li></button>"
-        , "    <button><li><a href=" <> T.pack qname <> "-Any.html>Any</a></li></button>"
+        , "    <li><a href=" <> T.pack qname <> "-Any.html>Any</a></li>"
+        -- , "    <button onclick=\"setQueryParam('" <> T.pack qname <>"', '" <> "Any" <> "')\"><li><a href=" <> T.pack qname <> "-Any.html>Any</a></li></button>"
+        -- , "    <button onclick=\"setQueryParam('" <> T.pack qname <>"', '" <> "Any" <> "')\"><li>Any</li></button>"
         ] <> (
 
         flip map universe $ \qparam ->
@@ -65,8 +68,8 @@ body :: [Recipe] -> Text
 body = T.unlines . map displayRecipe
 
 displayRecipe :: Recipe -> Text
-displayRecipe (Recipe name meals mKitchen ingredients_ mInstructions) = T.unlines $
-  [ "<h3>" <> name <> "</h3>" ] ++
+displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.unlines $
+  [ "<h3>" <> name <> (if Vegan `elem` diets then " <font color=green>Ⓥ</font>" else "") <> "</h3>" ] ++
   [ maybe "" (\k -> "<i>(" <> T.replace "_" " " (text k) <>
                if null meals
                then ""
