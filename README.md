@@ -1,5 +1,8 @@
 # Recipes graph
 
+[![Build
+status](https://github.com/stevana/recipes-graph/actions/workflows/main.yaml/badge.svg)](https://github.com/stevana/recipes-graph/actions)
+
 This repository contains a food recipe database and a program that generates
 static [webpages](https://stevana.github.io/recipes-graph) from said database.
 

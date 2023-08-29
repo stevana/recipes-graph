@@ -31,7 +31,7 @@ jobs:
         with:
           ghc-version: ${{ matrix.ghc-version }}
           cabal-version: '3.10.1.0'
-          cabal-update: false
+          cabal-update: true
 
       - name: Installed minor versions of GHC and Cabal
         shell: bash
