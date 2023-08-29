@@ -19,7 +19,12 @@
   kitchen: Central_European
   time: long
   ingredients:
+    - oil
     - onions
+    - paprika powder
+    - mushrooms
+    - meat
+    - potato starch
 
 - id: Bolognese
   meal:
@@ -28,11 +33,17 @@
   kitchen: Italian
   time: medium
   ingredients:
-    - mince
+    - oil
+    - tomato paste
     - onion
-    - carrots
+    - carrot
     - celery
+    - minced meat
+    - white wine
+    - chicken stock
     - milk
+    - parmesan chesse
+    - pasta
 
 - id: Dan dan noodles
   meal:
@@ -109,9 +120,12 @@
     - Dinner
   kitchen: Italian
   ingredients:
-    - pasta
+    - oil
+    - red onion
     - ricotta
     - zucinni
+    - parmesan cheese
+    - pasta
 
 - id: Bean soup
   meal:
@@ -143,8 +157,24 @@
   meal:
     - Dinner
   ingredients:
+    - olive oil
+    - onion
+    - potatoes
     - aubergine
-    - bechamel
+    - lamb mince
+    - garlic
+    - cinnamon
+    - allspice
+    - bay leaf
+    - red wine
+    - tomatoes
+    - butter
+    - flour
+    - milk
+    - parmesan cheese
+    - greek yogurt
+    - egg
+    - potatoes
 
 - id: Peanut sauce
   kithcen: Asian
@@ -168,3 +198,58 @@
     - vary water for desired consistency
 
   source: Jack
+
+- id: Menemen
+  kitchen: Middle_Eastern
+  meal:
+    - Breakfast
+    - Brunch
+  ingredients:
+    - eggs
+    - peppers
+    - white cheese
+  similar:
+    - Shakshouka
+
+- id: Chili
+  kitchen: Mexican
+  meal:
+    - Dinner
+    - Lunch
+  ingredients:
+    - onions
+    - carrots
+    - paprika
+    - chilies
+    - chocolate
+    - coffee
+    - vodka
+    - beans
+    - rice
+    - cheddar cheese
+    - nachos
+
+- id: Mushroom soup
+  kitchen: French
+  meal:
+    - Dinner
+  ingredients:
+    - mushrooms
+    - butter
+    - shallots
+    - salt
+    - black pepper
+    - butter
+    - flour
+    - milk
+    - bay leaf
+    - onions
+    - cloves
+    - nutmeg
+    - cream
+    - milk
+    - croutons
+    - butter
+    - parsley
+    - dry sherry
+    - bread
