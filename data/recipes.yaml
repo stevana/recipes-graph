@@ -1,0 +1,147 @@
+- id: Shakshouka
+  kitchen: Middle_Eastern
+  meal: 
+    - Breakfast
+    - Lunch
+    - Brunch
+  time: simple
+  ingredients:
+    - tomatoes
+    - eggs
+    - feta cheese
+  instructions:
+    - make tomatoe sauce
+    - poach eggs in sauce
+
+- id: Goulash
+  meal: 
+    - Dinner
+  kitchen: Central_European
+  time: long
+  ingredients:
+    - onions
+
+- id: Bolognese
+  meal: 
+    - Lunch
+    - Dinner
+  kitchen: Italian
+  time: medium
+  ingredients:
+    - mince
+    - onion
+    - carrots
+    - celery
+    - milk
+ 
+- id: Dan dan noodles
+  meal: 
+    - Lunch
+    - Dinner
+  kitchen: Asian
+  ingredients:
+    - sichuan chili oil 
+    - mushrooms
+    - noodles
+
+- id: Ramen
+  meal: 
+    - Lunch
+    - Dinner
+  kitchen: Asian
+  ingredients:
+    - noodles
+    - mushrooms
+    - eggs
+    - pak choi
+
+- id: Zuccini kuchen
+  meal: 
+    - Dessert
+  ingredients:
+    - zuccini
+
+- id: Empanadas
+  meal: 
+    - Picnic
+  ingredients:
+    - red lentils
+
+- id: Quiche
+  meal: 
+    - Picnic
+  kitchen: French
+  ingredients:
+    - leek
+    - carrot
+    - onion
+    - cheese
+    - eggs
+
+- id: Sauerkrautsuppe
+  meal:
+    - Lunch
+    - Dinner
+  kitchen: Central_European
+  ingredients:
+    - sauerkraut
+
+- id: Wraps
+  meal:
+    - Dinner
+  kitchen: Mexican
+  ingredients:
+    - tortillas
+
+- id: Lasagne
+  meal:
+    - Dinner
+  kitchen: Italian
+  ingredients:
+    - pasta
+    - mince
+    - bechamel
+    - tomatoe sauce
+
+- id: Courgette pasta
+  meal:
+    - Lunch
+    - Dinner
+  kitchen: Italian
+  ingredients:
+    - pasta
+    - ricotta
+    - zucinni
+
+- id: Bean soup
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - beans
+
+- id: Roasted potatoes
+  meal:
+    - Dinner
+    - Side
+  ingredients:
+    - potatoes
+
+- id: Caper pasta
+  kitchen: Italian
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - capers
+    - onion
+    - pasta
+    - parmesane
+
+- id: Moussaka
+  kitchen: Greek
+  meal:
+    - Dinner
+  ingredients:
+    - aubergine
+    - bechamel

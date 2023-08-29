@@ -1,0 +1,71 @@
+cabal-version:   3.0
+name:            recipes-graph
+version:         0.0.0
+synopsis:        Graph database of food recipes
+description:
+  Please see the README on Github at <https://github.com/stevana/recipes-graph#readme>
+
+license:         BSD-2-Clause
+license-file:    LICENSE
+author:          Stevan Andjelkovic
+maintainer:      stevana@users.noreply.github.com
+copyright:       Copyright (c) 2023 Stevan Andjelkovic
+category:        Database
+build-type:      Simple
+extra-doc-files:
+  CHANGELOG.md
+  README.md
+
+data-files:
+  data/recipes.yaml
+  data/style.css
+
+common warnings
+  ghc-options: -Wall
+
+library
+  import:           warnings
+  exposed-modules:
+    Generate
+    LibMain
+    Parsing
+    Queries
+    Utils
+
+  autogen-modules:  Paths_recipes_graph
+  other-modules:    Paths_recipes_graph
+  build-depends:
+    , aeson
+    , base           >=4.5 && <4.7
+    , directory
+    , filepath
+    , sqlite-simple
+    , text
+    , yaml
+
+  hs-source-dirs:   src
+  default-language: Haskell2010
+
+executable exe
+  import:           warnings
+  main-is:          Main.hs
+  build-depends:
+    , base
+    , recipes-graph
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
+
+test-suite test
+  import:           warnings
+  default-language: Haskell2010
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   test
+  main-is:          Main.hs
+  build-depends:
+    , base
+    , recipes-graph
+
+source-repository head
+  type:     git
+  location: https://github.com/stevana/recipes-graph
