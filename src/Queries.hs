@@ -1,15 +1,15 @@
-{-# LANGUAGE ExistentialQuantification #-}
-{-# LANGUAGE DeriveGeneric #-}
 {-# LANGUAGE DeriveAnyClass #-}
+{-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE OverloadedStrings #-}
 
 module Queries where
 
 import Control.Monad
-import Data.Aeson (decodeStrict, encode)
+import Data.Aeson (FromJSON, decodeStrict, encode)
+import Data.List (intersect)
 import Data.Maybe (fromJust)
 import Data.Text (Text)
-import Data.List (intersect)
 import qualified Data.Text as T
 import Data.Text.Encoding
 import Database.SQLite.Simple
@@ -80,10 +80,13 @@ allQueries = Queries [ SomeQuery "Kitchen" queryKitchen
                      , SomeQuery "Diet"    queryDiet
                      ]
 
+parseResults :: FromJSON a => [[Text]] -> [a]
+parseResults = map (fromJust . decodeStrict . encodeUtf8 . T.concat)
+
 queryAllRecipes :: Connection -> IO [Recipe]
 queryAllRecipes conn = do
   rs <- query_ conn "SELECT body FROM nodes"
-  return (map (fromJust . decodeStrict . encodeUtf8 . T.concat) rs)
+  return (parseResults rs)
 
 queryKitchen :: Connection -> [Kitchen] -> IO [Recipe]
 queryKitchen conn kitchens = do
@@ -92,7 +95,7 @@ queryKitchen conn kitchens = do
                      "FALSE" kitchens
       q      = Query ("SELECT body FROM nodes WHERE " <> clause)
   rs <- query_ conn q
-  return (map (fromJust . decodeStrict . encodeUtf8 . T.concat) rs)
+  return (parseResults rs)
 
 queryMeal :: Connection -> [Meal] -> IO [Recipe]
 queryMeal conn meals = do
@@ -101,7 +104,7 @@ queryMeal conn meals = do
                  \ nodes ON edges.source = nodes.id WHERE \
                  \ edges.properties = 'EatenAt' AND " <> clause)
   rs <- query_ conn q
-  return (map (fromJust . decodeStrict . encodeUtf8 . T.concat) rs)
+  return (parseResults rs)
 
 queryDiet :: Connection -> [Diet] -> IO [Recipe]
 queryDiet conn diets = do
@@ -110,19 +113,18 @@ queryDiet conn diets = do
                  \ nodes ON edges.source = nodes.id WHERE \
                  \ edges.properties = 'EatenBy' AND " <> clause)
   rs <- query_ conn q
-  return (map (fromJust . decodeStrict . encodeUtf8 . T.concat) rs)
+  return (parseResults rs)
 
 powerQuery :: Queries -> Queries
 powerQuery (Queries qs0) = Queries (go qs0)
   where
     go :: [SomeQuery] -> [SomeQuery]
-    go [] = []
-    go (q : qs)
-      = -- q
-      -- XXX: this equality should never hold unless there are duplicates in queries?
-      concatMap (\q' -> if queryName q == queryName q' then [] else [intersectSomeQuery q q'])
-                  (go qs)
-      ++ go qs
+    go []       = []
+    go (q : qs) =
+      let
+        ps = go qs
+      in
+        map (intersectSomeQuery q) ps ++ ps
 
 intersectSomeQuery :: SomeQuery -> SomeQuery -> SomeQuery
 intersectSomeQuery (SomeQuery qname q) (SomeQuery qname' q') =

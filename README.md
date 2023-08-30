@@ -10,3 +10,9 @@ More specifically, it takes a yaml file containing [recipes](data/recipes.yaml)
 as input, generates an SQLite [graph
 database](https://github.com/dpapathanasiou/simple-graph), queries the database,
 generates HTML pages for each query and uploads the HTML to GitHub pages.
+
+## To do
+
+- [ ] Query by time the dish takes to make
+- [ ] Query by ingredient(s)
+- [ ] Optionally use javascript to select multiple queries/filters

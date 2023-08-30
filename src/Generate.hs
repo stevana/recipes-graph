@@ -45,7 +45,7 @@ menu (Queries qs) selectedQname selectedQparam = T.unlines $
   where
     lis :: [Text]
     lis =
-      flip map qs $ \(SomeQuery qname _q) -> T.concat $
+      for qs $ \(SomeQuery qname _q) -> T.concat $
         [ "<li><h5 class=\"category\">" <> T.pack qname <> "</h5>"
         , "  <ul>"
         , "    <li><a href=" <> T.pack qname <> "-Any.html>Any</a></li>"
@@ -53,7 +53,7 @@ menu (Queries qs) selectedQname selectedQparam = T.unlines $
         -- , "    <button onclick=\"setQueryParam('" <> T.pack qname <>"', '" <> "Any" <> "')\"><li>Any</li></button>"
         ] <> (
 
-        flip map universe $ \qparam ->
+        for universe $ \qparam ->
           let _ = _q undefined [qparam] in -- NOTE: Only used for type inferance of qparam.
             "<li><a href=" <> T.pack qname <> "-" <> text qparam <> ".html>" <>
               (

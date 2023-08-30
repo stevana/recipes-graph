@@ -50,31 +50,6 @@ data Diet
 
 ------------------------------------------------------------------------
 
-class Finite a where
-  universe :: [a]
-
-instance (Finite a, Finite b) => Finite (a, b) where
-  universe = [ (x, y) | x <- universe, y <- universe ]
-
-instance Finite Kitchen where
-  universe = enumFrom minBound
-
-instance Finite Meal where
-  universe = enumFrom minBound
-
-instance Finite Diet where
-  universe = enumFrom minBound
-
-instance Finite Bool where
-  universe = [True, False]
-
-powerset :: Finite a => [[a]]
-powerset = go universe
-  where
-    go []       = [[]]
-    go (x : xs) = let ps = go xs in ps ++ map (x :) ps
-
-------------------------------------------------------------------------
-
 parseRecipes :: FilePath -> IO [Recipe]
 parseRecipes fp = Yaml.decodeFileThrow fp
+-- XXX: decodeFileWithWarnings :: FromJSON a => FilePath -> IO (Either ParseException ([Warning], a))
