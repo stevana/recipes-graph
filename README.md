@@ -11,8 +11,13 @@ as input, generates an SQLite [graph
 database](https://github.com/dpapathanasiou/simple-graph), queries the database,
 generates HTML pages for each query and uploads the HTML to GitHub pages.
 
+People who know SQL and have SQLite installed can also download the
+[database](https://stevana.github.io/recipes-graph/recipes.sqlite) and query it
+directly.
+
 ## To do
 
 - [ ] Query by time the dish takes to make
 - [ ] Query by ingredient(s)
 - [ ] Optionally use javascript to select multiple queries/filters
+- [ ] Integrate [sql.js](https://github.com/sql-js/sql.js/tree/master/examples/GUI)?
