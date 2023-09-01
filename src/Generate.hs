@@ -33,9 +33,7 @@ menu (Queries qs) = T.unlines $
   [ "<header>"
   , "<h1>Recipes</h1>"
   , "<nav id=\"nav\" class=\"menu\">"
-  , "<ul>"
-  ] ++ lis ++
-  [ "</ul>"
+  , ul lis
   , "</nav>"
   , "</header>"
   , "<br />"
@@ -45,20 +43,16 @@ menu (Queries qs) = T.unlines $
     lis :: [Text]
     lis =
       for qs $ \(SomeQuery qname _q) -> T.concat $
-        [ "<li><h5 class=\"category\">" <> T.pack qname <> "</h5>"
-        , "  <ul>"
-        ] <> (
-
-        for universe $ \qparam ->
-          let _ = _q undefined [qparam] in -- NOTE: Only used for type inferance of qparam.
-            -- "<button id=\"" <> T.pack qname <> "-" <> text qparam <> "\"><li><a href=" <> T.pack qname <> "-" <> text qparam <> ".html>" <>
-            "<li><button class=\"" <> T.pack qname <> "\" id=\"" <> text qparam <> "\">" <>
-            T.replace "_" " " (text qparam) <>
-            "</button></li>" ) <>
-        ["</li></ul>"]
+        [ "<h5 class=\"category\">" <> T.pack qname <> "</h5>"
+        , ul $ for universe $ \qparam ->
+            let _ = _q undefined [qparam] in -- NOTE: Only used for type inferance of qparam.
+            "<button class=\"" <> T.pack qname <> "\" id=\"" <> text qparam <> "\">" <>
+            T.replace "_" " " (text qparam) <> "</button>"
+        ]
 
 body :: [Recipe] -> Text
-body = T.unlines . map displayRecipe
+body [] = "<p>No recipes found, try changing some filters.</p>"
+body rs = T.unlines (map displayRecipe rs)
 
 displayRecipe :: Recipe -> Text
 displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.unlines $
@@ -68,12 +62,15 @@ displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.
                then ""
                else "; " <> T.intercalate ", " (map (T.toLower . text) meals) <>
                ")</i>") mKitchen ] ++
-  ["<ul>"] ++
-  map (\i -> "<li>" <> i <> "</li>") ingredients_ ++
-  ["</ul>"] ++
-  maybe [""] (\instructions_ ->
-                "<ol>" : map (\i -> "<li>" <> i <> "</li>") instructions_ ++ ["</ol>"])
-        mInstructions
+  [ ul ingredients_
+  , maybe "" ol mInstructions
+  ]
+
+ul :: [Text] -> Text
+ul ils = "<ul>\n" <> T.unlines (map (\il -> "  <li>" <> il <> "</li>") ils) <> "</ul>"
+
+ol :: [Text] -> Text
+ol ils = "<ol>\n" <> T.unlines (map (\il -> "  <li>" <> il <> "</li>") ils) <> "</ol>"
 
 footer :: Text
 footer = "<script src=\"script.js\"></script></body></html>"
