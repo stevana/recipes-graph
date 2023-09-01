@@ -73,7 +73,6 @@
   diet:
     - Meat
     - Vegetarian
-    - Vegan
   kitchen: Asian
   ingredients:
     - noodles
@@ -94,7 +93,6 @@
     - Picnic
   diet:
     - Vegetarian
-    - Vegan
   ingredients:
     - red lentils
 
@@ -460,3 +458,31 @@
     - 5 tbsp bread crumbs
   source: French Cooking Academy
   url: https://www.youtube.com/watch?v=VdbJqMd0CX0
+
+- id: Lentil soup
+  kitchen: Central_European
+  diet:
+    - Vegetarian
+    - Meat
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - onions
+    - carrots
+    - lentils
+    - potatoes
+    - (smoked meat/sausages)
+
+- id: Lentil salad
+  kitchen: Central_European
+  diet:
+    - Vegetarian
+  meal:
+    - Side
+    - Picnic
+  ingredients:
+    - lentils
+    - feta
+    - paprika
+    - balsamic vinegar
