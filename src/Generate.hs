@@ -56,15 +56,27 @@ body rs = T.unlines (map displayRecipe rs)
 
 displayRecipe :: Recipe -> Text
 displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.unlines $
-  [ "<h3>" <> name <> (if Vegan `elem` diets then " <font color=green>Ⓥ</font>" else "") <> "</h3>" ] ++
-  [ maybe "" (\k -> "<i>(" <> T.replace "_" " " (text k) <>
-               if null meals
-               then ""
-               else "; " <> T.intercalate ", " (map (T.toLower . text) meals) <>
-               ")</i>") mKitchen ] ++
-  [ ul ingredients_
+  [ h3 (name <> (if Vegan `elem` diets then " <font color=green>Ⓥ</font>" else ""))
+  , italic $ parenthesis $
+      maybe mealsText (\k -> T.replace "_" " " (text k) <>
+                        if null meals
+                        then ""
+                        else "; " <> mealsText
+                        ) mKitchen
+  , ul ingredients_
   , maybe "" ol mInstructions
   ]
+  where
+    mealsText = T.intercalate ", " (map (T.toLower . text) meals)
+
+h3 :: Text -> Text
+h3 t = "<h3>" <> t <> "</h3>"
+
+italic :: Text -> Text
+italic t = "<i>" <> t <> "</i>"
+
+parenthesis :: Text -> Text
+parenthesis t = "(" <> t <> ")"
 
 ul :: [Text] -> Text
 ul ils = "<ul>\n" <> T.unlines (map (\il -> "  <li>" <> il <> "</li>") ils) <> "</ul>"
