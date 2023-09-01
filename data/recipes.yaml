@@ -326,3 +326,29 @@
     - sour cream
     - spätzle
     - pasta
+
+- id: Aubergine with lentils
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegan
+  ingredients:
+    - onion
+    - carrot
+    - cellery
+    - bay leaves
+    - brown or de Puy lentils
+    - aubergine
+    - rosemary
+    - garlic
+    - tahini
+    - lemon
+    - pine nuts
+  instructions:
+    - Fry up onion, carrot, cellery. Add water/stock, bay leaves and lentils,
+      simmer until lentils are done.
+    - Cut aubergines in half, score and brush with oil, top rosemary and roast.
+    - Blend garlic, tahini and lemon into a sauce.
+  source: J. Kenji López-Alt
+  url: https://www.seriouseats.com/roasted-eggplant-tahini-pine-nut-lentil-vegan-experience-recipe
