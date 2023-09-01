@@ -352,3 +352,15 @@
     - Blend garlic, tahini and lemon into a sauce.
   source: J. Kenji López-Alt
   url: https://www.seriouseats.com/roasted-eggplant-tahini-pine-nut-lentil-vegan-experience-recipe
+
+- id: Pancakes
+  meal:
+    - Breakfast
+    - Brunch
+  diet:
+    - Vegetarian
+  ingredients:
+    - 100 g flour
+    - 2 eggs
+    - 300 ml milk
+    - glug of oil
