@@ -20,4 +20,6 @@ directly.
 - [ ] Query by time the dish takes to make
 - [ ] Query by ingredient(s)
 - [ ] Optionally use javascript to select multiple queries/filters
+- [ ] Recipes that link to other recipes, e.g. eggs benedict -> sauce hollandaise
+- [ ] Integrate flavour bible?
 - [ ] Integrate [sql.js](https://github.com/sql-js/sql.js/tree/master/examples/GUI)?

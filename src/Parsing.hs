@@ -34,6 +34,7 @@ data Meal
 data Kitchen
   = Asian
   | Central_European
+  | Northern_European
   | French
   | Greek
   | Italian

@@ -281,6 +281,7 @@
 - id: Mushroom soup
   kitchen: French
   meal:
+    - Starter
     - Dinner
   diet:
     - Vegetarian
@@ -364,3 +365,98 @@
     - 2 eggs
     - 300 ml milk
     - glug of oil
+
+- id: Eggs Benedict
+  meal:
+    - Breakfast
+    - Brunch
+  diet:
+    - Vegetarian
+  ingredients:
+    - eggs
+    - english muffins
+    - sauce Hollandaise
+
+- id: Smörgåstårta
+  kitchen: Northern_European
+  meal:
+    - Brunch
+    - Lunch
+  diet:
+    - Vegetarian
+  ingredients:
+    - eggs
+    - mayonese
+    - creme fraiche
+    - sour cream
+    - avocado
+    - radishes
+    - cucumber
+    - tomatoes
+    - cheese
+
+- id: Pizza
+  kitchen: Italian
+  meal:
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - flour
+    - tomatoes
+    - cheese
+
+- id: Pizza salad
+  kitchen: Northern_European
+  meal:
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - cabbage
+    - olive oil
+    - vinegar
+    - oregano
+
+- id: Köttbullar
+  kitchen: Northern_European
+  meal:
+    - Side
+    - Lunch
+    - Dinner
+  diet:
+    - Meat
+  ingredients:
+    - minced meat
+
+- id: Presswurst
+  kitchen: Central_European
+  diet:
+    - Meat
+  meal:
+    - Breakfast
+    - Side
+  ingredients:
+    - pork knees
+
+- id: Tomato tart
+  kitchen: French
+  diet:
+    - Vegan
+    - Vegetarian
+  meal:
+    - Starter
+    - Side
+    - Picnic
+  ingredients:
+    - puff pastry
+    - 2 tbsp Dijon mustard
+    - 4 tbsp tomato sauce
+    - 4 to 5 large tomatoes
+    - 2 tsp salt
+    - 1 tsp pepper
+    - 5 tbsp olive oil
+    - 1 tbsp herbes de Provence (or dried Italian herbs)
+    - 5 tbsp bread crumbs
+  source: French Cooking Academy
+  url: https://www.youtube.com/watch?v=VdbJqMd0CX0
