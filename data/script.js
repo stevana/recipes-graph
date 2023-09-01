@@ -1,12 +1,71 @@
+function makeButtonsSetQueryParams() {
+    function setQueryParam(key, value) {
+        if (!key || !value) {
+            return;
+        }
+        const params = new URLSearchParams(window.location.search);
+        if (params.get(key) == value) {
+            params.delete(key);
+        } else {
+            params.set(key, value);
+        }
+        params.sort();
+        window.location.search = params.toString();
+    }
+    const btns = document.querySelectorAll('button');
+    btns.forEach(btn => {
+        btn.addEventListener('click', event => {
+            setQueryParam(event.target.classList[0], event.target.id);
+        });
+    });
+}
 
-// https://stackoverflow.com/questions/5999118/how-can-i-add-or-update-a-query-string-parameter
-function setQueryParam(key, value) {
-    var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
-    var uri = window.location.href;
-    var separator = uri.indexOf('?') !== -1 ? "&" : "?";
-    if (uri.match(re)) {
-        window.location.href = uri.replace(re, '$1' + key + "=" + value + '$2');
-    } else {
-        window.location.href = uri + separator + key + "=" + value;
+function highlightSelectedMenuItems() {
+    const params = new URLSearchParams(window.location.search);
+    for (const [key, value] of params) {
+        const btn = document.querySelector("." + key + "#" + value);
+        if (btn) {
+            // btn.style.textDecoration  = 'underline';
+            btn.style.backgroundColor = 'lightgray';
+        }
     }
 }
+
+function changeUrlBasedOnQueryParams() {
+    const params = new URLSearchParams(window.location.search);
+    var keys = "";
+    for (const key of params.keys()) {
+        if (keys == "") {
+            keys += key
+        } else {
+            keys += "-" + key
+        }
+    }
+
+    var values = "";
+    var length = 0;
+    for (const value of params.values()) {
+        length++;
+        if (values == "") {
+            values += value
+        } else {
+            values += "," + value
+        }
+    }
+    if (length > 1) {
+        values = "(" + values + ")"
+    }
+
+    const pathnames = window.location.pathname.split('/');
+    var newPage = keys == "" ? "index.html" : keys + "-" + values + ".html";
+    if (pathnames[pathnames.length - 1] == newPage) {
+        return
+    } else {
+        pathnames[pathnames.length - 1] = newPage;
+        window.location.pathname = pathnames.join('/');
+    }
+}
+
+makeButtonsSetQueryParams();
+highlightSelectedMenuItems();
+changeUrlBasedOnQueryParams();

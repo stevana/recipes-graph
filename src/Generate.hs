@@ -26,11 +26,10 @@ header = T.unlines
   , "    <link rel=\"stylesheet\" href=\"style.css\" />"
   , "  </head>"
   , "  <body>"
-  , "  <script src=\"script.js\"></script>"
   ]
 
-menu :: Queries -> String -> String -> Text
-menu (Queries qs) selectedQname selectedQparam = T.unlines $
+menu :: Queries -> Text
+menu (Queries qs) = T.unlines $
   [ "<header>"
   , "<h1>Recipes</h1>"
   , "<nav id=\"nav\" class=\"menu\">"
@@ -48,20 +47,14 @@ menu (Queries qs) selectedQname selectedQparam = T.unlines $
       for qs $ \(SomeQuery qname _q) -> T.concat $
         [ "<li><h5 class=\"category\">" <> T.pack qname <> "</h5>"
         , "  <ul>"
-        , "    <li><a href=" <> T.pack qname <> "-Any.html>Any</a></li>"
-        -- , "    <button onclick=\"setQueryParam('" <> T.pack qname <>"', '" <> "Any" <> "')\"><li><a href=" <> T.pack qname <> "-Any.html>Any</a></li></button>"
-        -- , "    <button onclick=\"setQueryParam('" <> T.pack qname <>"', '" <> "Any" <> "')\"><li>Any</li></button>"
         ] <> (
 
         for universe $ \qparam ->
           let _ = _q undefined [qparam] in -- NOTE: Only used for type inferance of qparam.
-            "<li><a href=" <> T.pack qname <> "-" <> text qparam <> ".html>" <>
-              (
-              if show qparam == selectedQparam
-              then "<u>" <> T.replace "_" " " (text qparam) <> "</u>"
-              else T.replace "_" " " (text qparam)
-              )
-              <> "</a></li>" ) <>
+            -- "<button id=\"" <> T.pack qname <> "-" <> text qparam <> "\"><li><a href=" <> T.pack qname <> "-" <> text qparam <> ".html>" <>
+            "<li><button class=\"" <> T.pack qname <> "\" id=\"" <> text qparam <> "\">" <>
+            T.replace "_" " " (text qparam) <>
+            "</button></li>" ) <>
         ["</li></ul>"]
 
 body :: [Recipe] -> Text
@@ -83,25 +76,23 @@ displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.
         mInstructions
 
 footer :: Text
-footer = "</body></html>"
+footer = "<script src=\"script.js\"></script></body></html>"
 
-generatePage :: FilePath -> Queries -> String -> String -> [Recipe] -> IO ()
-generatePage fp queries qname qparam recipes =
+generatePage :: FilePath -> Queries -> [Recipe] -> IO ()
+generatePage fp queries recipes =
   let
-    txt = header <> menu queries qname qparam <> body recipes <> footer
+    txt = header <> menu queries <> body recipes <> footer
   in
     T.writeFile fp txt
 
 generatePages :: FilePath -> Connection -> Queries -> IO ()
-generatePages distDir conn queries@(Queries qs) = do
+generatePages distDir conn queries = do
   allRecipes <- queryAllRecipes conn
-  generatePage (distDir </> "index" <.> "html") queries "All" "All" allRecipes
-  forM_ qs $ \(SomeQuery qname q) -> do
+  generatePage (distDir </> "index" <.> "html") queries allRecipes
+  let Queries ps = powerQuery queries
+  forM_ ps $ \(SomeQuery qname q) -> do
     putStrLn $ "Generating page for: " <> qname
-    anyRecipes <- q conn universe
-    let fp  = distDir </> qname <> "-Any.html"
-    generatePage fp queries qname "Any" anyRecipes
     forM_ universe $ \qparam -> do
       recipes <- q conn [qparam]
       let fp' = distDir </> qname <> "-" <> show qparam <.> "html"
-      generatePage fp' queries qname (show qparam) recipes
+      generatePage fp' queries recipes

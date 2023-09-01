@@ -7,7 +7,8 @@ module Queries where
 
 import Control.Monad
 import Data.Aeson (FromJSON, decodeStrict, encode)
-import Data.List (intersect)
+import Data.Function (on)
+import Data.List (intersect, sortBy)
 import Data.Maybe (fromJust)
 import Data.Text (Text)
 import qualified Data.Text as T
@@ -116,7 +117,7 @@ queryDiet conn diets = do
   return (parseResults rs)
 
 powerQuery :: Queries -> Queries
-powerQuery (Queries qs0) = Queries (go qs0)
+powerQuery (Queries qs0) = Queries (go (sortBy (compare `on` queryName )qs0))
   where
     go :: [SomeQuery] -> [SomeQuery]
     go []       = []
@@ -124,7 +125,7 @@ powerQuery (Queries qs0) = Queries (go qs0)
       let
         ps = go qs
       in
-        map (intersectSomeQuery q) ps ++ ps
+        q : map (intersectSomeQuery q) ps ++ ps
 
 intersectSomeQuery :: SomeQuery -> SomeQuery -> SomeQuery
 intersectSomeQuery (SomeQuery qname q) (SomeQuery qname' q') =
