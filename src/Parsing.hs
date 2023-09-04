@@ -19,6 +19,8 @@ data Recipe = Recipe
   , diet         :: [Diet]
   , ingredients  :: [Text]
   , instructions :: Maybe [Text]
+  , source       :: Maybe Text
+  , url          :: Maybe Text
   }
   deriving (Eq, Show, Generic, ToJSON, FromJSON)
 

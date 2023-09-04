@@ -55,7 +55,7 @@ body [] = "<p>No recipes found, try changing some filters.</p>"
 body rs = T.unlines (map displayRecipe rs)
 
 displayRecipe :: Recipe -> Text
-displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.unlines $
+displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions mSource mUrl) = T.unlines $
   [ h3 (name <> (if Vegan `elem` diets then " <font color=green>Ⓥ</font>" else ""))
   , italic $ parenthesis $
       maybe mealsText (\k -> T.replace "_" " " (text k) <>
@@ -65,9 +65,16 @@ displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions) = T.
                         ) mKitchen
   , ul ingredients_
   , maybe "" ol mInstructions
+  , displaySourceUrl mSource mUrl
   ]
   where
     mealsText = T.intercalate ", " (map (T.toLower . text) meals)
+
+    displaySourceUrl :: Maybe Text -> Maybe Text -> Text
+    displaySourceUrl Nothing    Nothing     = ""
+    displaySourceUrl (Just src) Nothing     = "by " <> src
+    displaySourceUrl Nothing    (Just href) = "by <a href=\"" <> href <> "\">anoymous</a>"
+    displaySourceUrl (Just src) (Just href) = "by <a href=\"" <> href <> "\">" <> src <> "</a>"
 
 h3 :: Text -> Text
 h3 t = "<h3>" <> t <> "</h3>"
