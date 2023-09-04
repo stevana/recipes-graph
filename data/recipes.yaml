@@ -486,3 +486,52 @@
     - feta
     - paprika
     - balsamic vinegar
+
+- id: Potato gratin
+  kitchen: French
+  meal:
+    - Side
+    - Lunch
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - potatoes
+    - onions
+    - cream
+    - cheese
+
+- id: Bean salad
+  kitchen: French
+  meal:
+    - Side
+    - Dinner
+  diet:
+    - Vegan
+  ingredients:
+    - green beans
+    - shallots
+    - vinegar
+    - oil
+    - (capers)
+
+- id: Corn salad (Esquites)
+  kitchen: Mexican
+  meal:
+    - Side
+  diet:
+    - Vegetarian
+  ingredients:
+    - 2 tablespoons (30ml) vegetable oil
+    - 2 ears fresh corn, shucked, kernels removed (about 3 cups fresh corn kernels)
+    - Kosher salt
+    - 2 ounces (60g) feta or Cotija cheese, finely crumbled
+    - 1/2 cup finely sliced scallions, green parts only
+    - 1/2 cup (1/2 ounce) fresh cilantro leaves, finely chopped
+    - 1 jalapeño pepper, seeded and stemmed, finely chopped
+    - 1 to 2 medium cloves garlic, pressed or minced on a Microplane grater (about 1 to 2 teaspoons)
+    - 2 tablespoons (30ml) mayonnaise
+    - 1 tablespoon (15ml) fresh lime juice from 1 lime
+    - Chile powder or hot chile flakes, to taste
+  source: J. Kenji López-Alt
+  url: https://www.seriouseats.com/esquites-mexican-street-corn-salad-recipe
