@@ -49,11 +49,8 @@ function changeUrlBasedOnQueryParams() {
         if (values == "") {
             values += value
         } else {
-            values += "," + value
+            values += "-" + value
         }
-    }
-    if (length > 1) {
-        values = "(" + values + ")"
     }
 
     const pathnames = window.location.pathname.split('/');

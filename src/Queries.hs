@@ -12,7 +12,7 @@ import Data.List (intersect, sortBy)
 import Data.Maybe (fromJust)
 import Data.Text (Text)
 import qualified Data.Text as T
-import Data.Text.Encoding
+import Data.Text.Encoding (encodeUtf8)
 import Database.SQLite.Simple
 
 import Parsing
@@ -69,7 +69,7 @@ data EatenBy = EatenBy
 
 newtype Queries = Queries { unQueries :: [SomeQuery] }
 
-data SomeQuery = forall a. (Show a, Finite a) =>
+data SomeQuery = forall a. (Display a, Finite a) =>
                  SomeQuery String (Connection -> [a] -> IO [Recipe])
 
 queryName :: SomeQuery -> String
@@ -117,7 +117,7 @@ queryDiet conn diets = do
   return (parseResults rs)
 
 powerQuery :: Queries -> Queries
-powerQuery (Queries qs0) = Queries (go (sortBy (compare `on` queryName )qs0))
+powerQuery (Queries qs0) = Queries (go (sortBy (compare `on` queryName) qs0))
   where
     go :: [SomeQuery] -> [SomeQuery]
     go []       = []

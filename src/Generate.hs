@@ -46,8 +46,8 @@ menu (Queries qs) = T.unlines $
         [ "<h5 class=\"category\">" <> T.pack qname <> "</h5>"
         , ul $ for universe $ \qparam ->
             let _ = _q undefined [qparam] in -- NOTE: Only used for type inferance of qparam.
-            "<button class=\"" <> T.pack qname <> "\" id=\"" <> text qparam <> "\">" <>
-            T.replace "_" " " (text qparam) <> "</button>"
+            "<button class=\"" <> T.pack qname <> "\" id=\"" <> T.concat (display qparam) <> "\">" <>
+            T.replace "_" " " (T.concat (display qparam)) <> "</button>"
         ]
 
 body :: [Recipe] -> Text
@@ -103,5 +103,5 @@ generatePages distDir conn queries = do
     putStrLn $ "Generating page for: " <> qname
     forM_ universe $ \qparam -> do
       recipes <- q conn [qparam]
-      let fp' = distDir </> qname <> "-" <> show qparam <.> "html"
-      generatePage fp' queries recipes
+      let fp = distDir </> qname <> "-" <> T.unpack (T.intercalate "-" (display qparam)) <.> "html"
+      generatePage fp queries recipes

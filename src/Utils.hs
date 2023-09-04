@@ -1,9 +1,10 @@
+{-# LANGUAGE DefaultSignatures #-}
+{-# LANGUAGE ScopedTypeVariables #-}
+
 module Utils where
 
 import Data.Text (Text)
 import qualified Data.Text as T
-
-import Parsing
 
 ------------------------------------------------------------------------
 
@@ -18,26 +19,19 @@ text x = T.pack (show x)
 class Finite a where
   universe :: [a]
 
+  default universe :: (Enum a, Bounded a) => [a]
+  universe = enumFrom (minBound :: a)
+
 instance (Finite a, Finite b) => Finite (a, b) where
   universe = [ (x, y) | x <- universe, y <- universe ]
 
-instance Finite Kitchen where
-  universe = enumFrom minBound
+------------------------------------------------------------------------
 
-instance Finite Meal where
-  universe = enumFrom minBound
+class Display a where
+  display :: a -> [Text]
 
-instance Finite Diet where
-  universe = enumFrom minBound
+  default display :: Show a => a -> [Text]
+  display x = [text x]
 
-instance Finite Bool where
-  universe = [True, False]
-
-powerset :: (Monoid (m a), Applicative m) => [a] -> [m a]
-powerset = go
-  where
-    go []       = [mempty]
-    go (x : xs) = let ps = go xs in ps <> map (<> pure x) ps
-
-finitePowerset :: (Finite a, Monoid (m a), Applicative m) => [m a]
-finitePowerset = powerset universe
+instance (Display a, Display b) => Display (a, b) where
+  display (x, y) = display x ++ display y

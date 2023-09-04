@@ -8,6 +8,8 @@ import Data.Text (Text)
 import qualified Data.Yaml as Yaml
 import GHC.Generics (Generic)
 
+import Utils
+
 ------------------------------------------------------------------------
 
 data Recipe = Recipe
@@ -29,7 +31,7 @@ data Meal
   | Side
   | Dessert
   | Picnic
-  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON)
+  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON, Finite, Display)
 
 data Kitchen
   = Asian
@@ -40,14 +42,14 @@ data Kitchen
   | Italian
   | Mexican
   | Middle_Eastern
-  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON)
+  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON, Finite, Display)
 
 data Diet
   = Meat
   | Vegetarian
   | Vegan
   | Gluten
-  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON)
+  deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON, Finite, Display)
 
 ------------------------------------------------------------------------
 
