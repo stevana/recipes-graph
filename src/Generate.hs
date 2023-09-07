@@ -68,6 +68,7 @@ displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions mSour
   , displaySourceUrl mSource mUrl
   ]
   where
+    mealsText :: Text
     mealsText = T.intercalate ", " (map (T.toLower . text) meals)
 
     displaySourceUrl :: Maybe Text -> Maybe Text -> Text
