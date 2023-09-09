@@ -36,9 +36,9 @@ function changeUrlBasedOnQueryParams() {
     var keys = "";
     for (const key of params.keys()) {
         if (keys == "") {
-            keys += key
+            keys += key;
         } else {
-            keys += "-" + key
+            keys += "-" + key;
         }
     }
 
@@ -47,16 +47,16 @@ function changeUrlBasedOnQueryParams() {
     for (const value of params.values()) {
         length++;
         if (values == "") {
-            values += value
+            values += value;
         } else {
-            values += "-" + value
+            values += "-" + value;
         }
     }
 
     const pathnames = window.location.pathname.split('/');
     var newPage = keys == "" ? "index.html" : keys + "-" + values + ".html";
     if (pathnames[pathnames.length - 1] == newPage) {
-        return
+        return;
     } else {
         pathnames[pathnames.length - 1] = newPage;
         window.location.pathname = pathnames.join('/');
