@@ -613,3 +613,41 @@
     - linseed
   source: Hendrik Kleinwaechter
   url: https://github.com/hendricius/the-sourdough-framework
+
+- id: Pumpkin pasta
+  kitchen: Italian
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - pumpkin
+    - butter
+    - sage
+    - creme fraiche
+    - pasta
+
+- id: Pumpkin gnocchi
+  kitchen: Italian
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - pumpkin
+    - butter
+    - sage
+    - flour
+
+- id: Butternut pumpkin pie
+  kitchen: American
+  meal:
+    - Dessert
+  diet:
+    - Vegetarian
+  ingreidents:
+    - butternut squash
+  source: Stella Parks
+  url: https://www.seriouseats.com/bravetart-butternut-pumpkin-pie-recipe
