@@ -552,12 +552,64 @@
     - Enough cooking oil to coat the dough
     - 3 pieces of biang biang noodles
     - A few pieces of baby bok choy
-    - 1.5 tbsp of soy sauce 
-    - 1.5 tbsp of Chinese black vinegar 
+    - 1.5 tbsp of soy sauce
+    - 1.5 tbsp of Chinese black vinegar
     - 2-3 tbsp of diced green onion
-    - 1-3 tsp of chili flake 
+    - 1-3 tsp of chili flake
     - 2 cloves of garlic
     - Salt to taste
     - 2-3 tbsp of cooking oil
   source: Souped Up Recipes
   url: https://www.youtube.com/watch?v=8qRkGGia3PI
+
+- id: Radicchio lasagne
+  kitchen: Italian
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - radicchio
+    - onion
+    - gorgonzola
+    - (mozzarella)
+    - Parmesan cheese
+    - butter
+    - flour
+    - milk
+    - lasagne sheets
+
+- id: Sourdough bread
+  kitchen: Central_European
+  meal:
+    - Breakfast
+    - Brunch
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 150 g sourdough starter
+    - 500 g water
+    - 300 g whole grain spelt flour
+    - 400 g wheat flour
+    - 20 g salt
+
+- id: Rye bread
+  kitchen: Central_European
+  meal:
+    - Breakfast
+    - Brunch
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 150 g sourdough starter
+    - 600 g water
+    - 750 g whole grain rye flour
+    - 20 g salt
+    - sunflower seeds
+    - pumpkin seeds
+    - linseed
+  source: Hendrik Kleinwaechter
+  url: https://github.com/hendricius/the-sourdough-framework
