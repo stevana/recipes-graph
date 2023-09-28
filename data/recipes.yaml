@@ -651,3 +651,32 @@
     - butternut squash
   source: Stella Parks
   url: https://www.seriouseats.com/bravetart-butternut-pumpkin-pie-recipe
+
+- id: Pumpkin gnocchi
+  kitchen: Italian
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - pumpkin
+    - butter
+    - sage
+    - flour
+
+- id: Pumpkin soup
+  kitchen: Central_European
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - butter
+    - onion
+    - carrot
+    - pumpkin
+    - stock
+    - lime
+    - creme fraiche
