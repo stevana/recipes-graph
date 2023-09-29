@@ -680,3 +680,57 @@
     - feta cheese
     - harissa
   source: Kitten/Middle
+
+- id: Vegetable pancake (Yachaejeon) 
+  kitchen: Asian
+  diet:
+    - Vegan
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - leek
+    - carrots
+    - onion
+    - chili
+    - zuccini
+    - sweet potato
+    - mushrooms
+    - green onion
+    - flour
+  source: Maangchi
+  url: https://www.maangchi.com/recipe/yachaejeon
+
+- id: Hummus
+  kitchen: Middle_Eastern
+  diet:
+    - Vegan
+  meal:
+    - Side
+    - Dinner
+  ingredients:
+    - chickpeas
+    - tahini
+
+- id: Kimchi
+  kitchen: Asian
+  diet:
+    - Vegan
+  meal:
+    - Side
+  ingredients:
+    - 3 pounds napa cabbage
+    - 9 tablespoons kosher salt
+    - 2 tablespoons chapssalgaru (glutinous rice flour, aka sweet rice flour)
+    - 1⅓ cup vegetable stock
+    - 1 tablespoon plus 1 teaspoon sugar
+    - 9 garlic cloves
+    - 1 teaspoon peeled ginger
+    - 1 medium onion, cut into chunks
+    - 1 cup gochu-garu (Korean hot pepper flakes)
+    - 6 ounces Korean radish, cut into matchsticks (about 1 cup), or daikon
+    - 3 ounces buchu (Asian chives, aka garlic chives), chopped (optional)
+    - 6 green onions, sliced diagonally
+    - 2 ounces carrot matchsticks (about ¼ cup)
+  source: Maangchi
+  url: https://www.maangchi.com/recipe/chaesik-kimchi
