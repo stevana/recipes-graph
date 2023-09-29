@@ -667,3 +667,16 @@
     - stock
     - lime
     - creme fraiche
+
+- id: Steamed kohlrabi
+  kitchen: Middle_Eastern
+  diet:
+    - Vegetarian
+  meal:
+    - Side
+    - Dinner
+  ingredients:
+    - kohlrabi
+    - feta cheese
+    - harissa
+  source: Kitten/Middle
