@@ -682,7 +682,7 @@
     - harissa
   source: Kitten/Middle
 
-- id: Vegetable pancake (Yachaejeon) 
+- id: Vegetable pancake (Yachaejeon)
   kitchen: Asian
   diet:
     - Vegan
@@ -735,3 +735,20 @@
     - 2 ounces carrot matchsticks (about ¼ cup)
   source: Maangchi
   url: https://www.maangchi.com/recipe/chaesik-kimchi
+
+- id: Refried beans
+  meal:
+    - Side
+  kitchen: Mexican
+  diet:
+    - Vegan
+  ingredients:
+    - 1/2 pound (227g) dried pinto or black beans
+    - Water
+    - 2 sprigs fresh epazote or oregano (see notes)
+    - 1 medium white onion, 1/2 minced (about 1/2 cup; 26g), 1/2 left whole
+    - 2 medium cloves garlic
+    - Kosher salt
+    - 6 tablespoons (77g) lard, bacon drippings, vegetable oil, or butter (see notes)
+  source:  Daniel Gritzer (Serious Eats)
+  url: https://www.seriouseats.com/perfect-refried-beans
