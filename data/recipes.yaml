@@ -744,11 +744,23 @@
     - Vegan
   ingredients:
     - 1/2 pound (227g) dried pinto or black beans
-    - Water
+    - water
     - 2 sprigs fresh epazote or oregano (see notes)
     - 1 medium white onion, 1/2 minced (about 1/2 cup; 26g), 1/2 left whole
     - 2 medium cloves garlic
-    - Kosher salt
+    - kosher salt
     - 6 tablespoons (77g) lard, bacon drippings, vegetable oil, or butter (see notes)
-  source:  Daniel Gritzer (Serious Eats)
+  source: Daniel Gritzer (Serious Eats)
   url: https://www.seriouseats.com/perfect-refried-beans
+
+- id: Quesadilla
+  meal:
+    - Dinner
+  kitchen: Mexican
+  diet:
+    - Vegetarian
+  ingredients:
+    - cheddar cheese
+    - avocado
+    - tabasco sauce
+  source: Guillaume
