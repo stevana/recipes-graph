@@ -764,3 +764,33 @@
     - avocado
     - tabasco sauce
   source: Guillaume
+
+- id: Nigerian stewed beans (ewa riro) 
+  meal:
+    - Dinner
+  kitchen: African
+  diet:
+    - Vegan
+  ingredients:
+    - black-eyed peas
+
+- id: Flammkuchen / tarte flambée
+  meal:
+    - Lunch
+    - Dinner
+  kitchen: French
+  diet:
+    - Vegetarian
+  ingredients:
+    - onions, butter, bacon/mushrooms, creme fraiche, nutmeg, thyme
+      (https://www.theguardian.com/food/2020/jun/24/how-to-make-the-perfect-flammekueche-recipe-felicity-cloake)
+    - beetroot, goats cheese, chives, creme fraiche, thyme, horseradish?
+      (https://www.lidl-recettes.fr/recettes/tarte-flambee-chevre-betterave)
+    - pumpkin, red onion, feta, pumpkin seeds, nutmeg
+      (https://www.hellofresh.fr/recipes/flammkuchen-met-pompoenroomsaus-feta-en-rode-ui-5da593b70433e13f51114e4b)
+    - fennel, burrata, creme fraiche, thyme, parmesan, olive oil, rocket
+      (https://lacuisinedegeraldine.fr/tarte-flambee-vegetarienne-au-fenouil)
+    - pears, walnuts, creme fraiche, goats cheese, chives
+      (http://www.beaualalouche.com/archives/2013/08/08/27739957.html)
+    - pear, walnuts, honey, creme fraiche, gorgonzola
+  
