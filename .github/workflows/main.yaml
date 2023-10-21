@@ -20,13 +20,13 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-22.04]
-        ghc-version: ['9.4']
+        ghc-version: ['9.4.6']
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Set up GHC ${{ matrix.ghc-version }}
-        uses: haskell/actions/setup@v2
+        uses: haskell-actions/setup@v2
         id: setup
         with:
           ghc-version: ${{ matrix.ghc-version }}
