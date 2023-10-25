@@ -765,7 +765,7 @@
     - tabasco sauce
   source: Guillaume
 
-- id: Nigerian stewed beans (ewa riro) 
+- id: Nigerian stewed beans (ewa riro)
   meal:
     - Dinner
   kitchen: African
@@ -793,4 +793,31 @@
     - pears, walnuts, creme fraiche, goats cheese, chives
       (http://www.beaualalouche.com/archives/2013/08/08/27739957.html)
     - pear, walnuts, honey, creme fraiche, gorgonzola
-  
+
+- id: Cauliflower purée
+  meal:
+    - Side
+  kitchen: French
+  diet:
+    - Vegetarian
+  ingredients:
+    - 1 (2-pound; 925g) head cauliflower, trimmed and cut into florets
+    - 3 tablespoons (45ml) extra-virgin olive oil
+    - Kosher salt and freshly ground black pepper
+    - 2 tablespoons (30g) unsalted butter
+    - 1 large (8 ounces; 225g) yellow onion, thinly sliced
+    - 4 medium cloves garlic, thinly sliced
+    - Pinch cayenne pepper
+    - 1 cup (235ml) heavy cream or homemade or store-bought low-sodium chicken stock (or a combination of the two; see notes)
+    - 1 sprig thyme
+
+  instructions:
+    - Roast cauliflower, 260°C, 20 mins;
+    - In a large saucepan, fry onion, garlic, in butter until golden, add
+      cayenne;
+    - Add cauliflower, cream and/or stock, and thyme. Simmer until cauliflower
+      is soft, remove thyme;
+    - Blend cauliflower and liquid to form a very smooth purée.
+
+  source: Daniel Gritzer (Serious Eats)
+  url: https://www.seriouseats.com/rich-nutty-roasted-cauliflower-puree-recipe
