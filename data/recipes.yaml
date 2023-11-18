@@ -854,3 +854,31 @@
     - ½ teaspoon kosher salt
     - 2 tablespoons olive oil, divided
   url: https://www.acouplecooks.com/vegan-tacos-recipe/
+
+- id: Bau buns
+  meal:
+    - Side
+    - Dinner
+  diet:
+    - Vegetarian
+  ingredients:
+    - 360 ml whole milk (heated to 35 degrees)
+    - 7g yeast
+    - 40g sugar
+    - 600 g AP flour (yields 15-20 buns)
+    - 6g baking powder
+    - 3g salt
+  instructions:
+    - proof yeast in heated milk
+    - combine dry ingredients and then add the milk
+    - kneed into a dough, let rest 10 mins
+    - kneed again, rise for 1h
+    - cut out 15-20 baking paper squares
+    - after rise, punch out all air from the dough
+    - form 15-20 dough balls about 50-70g each (keep covered to avoid drying out)
+    - roll out the balls to about 0.6 cm think disks
+    - greese the surface and fold them over
+    - proof for 10-15 min until they puff up and steam right away (or put them
+      into the fridge if not steaming right away)
+  source: Joshua Weissman
+  url: https://youtube.com/watch?v=JbqeiCi_aJY
