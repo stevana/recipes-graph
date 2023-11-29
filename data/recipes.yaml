@@ -859,6 +859,7 @@
   meal:
     - Side
     - Dinner
+  kitchen: Asian
   diet:
     - Vegetarian
   ingredients:
@@ -882,3 +883,27 @@
       into the fridge if not steaming right away)
   source: Joshua Weissman
   url: https://youtube.com/watch?v=JbqeiCi_aJY
+
+- id: Gyoza dumplings
+  meal:
+    - Dinner
+  kitchen: Asian
+  diet:
+    - Vegetarian
+  ingredients:
+    - 225g all-purpose flour
+    - 75g bread flour
+    - 147g water, boiling
+    - 1/2 teaspoon (2g) kosher salt
+    - corn starch for rolling
+  instructions:
+    - Combine ingredients, knead until smooth, let rest for 15 min
+    - Divide into 4-5 pieces, roll out until see-through thin
+    - Cut out sheets
+    - Fill with whatever filling
+    - Frying pan, medium heat, oil once hot
+    - Add dumplings, don't overlap
+    - Add 1/4 cup of water and cover with a lid, steam for three minutes
+    - Remove lid and cook until all water evaporates and dumplings turn golden brown
+  source: Joshua Weissman
+  url: https://www.joshuaweissman.com/post/dumplings
