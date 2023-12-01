@@ -118,7 +118,19 @@
     - Meat
     - Vegetarian
   ingredients:
-    - sauerkraut
+    - 400g sauerkraut
+    - 4 potatoes
+    - 3 onions
+    - 40g all-purpose flour
+    - sugar
+    - 1.2L stock
+    - pork lard or vegetable oil
+    - sweet paprika
+    - bay leaves
+    - crushed caraway seeds
+    - pepper
+    - salt
+    - (sausages)
 
 - id: Wraps
   meal:
