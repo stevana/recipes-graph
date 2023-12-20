@@ -919,3 +919,21 @@
     - Remove lid and cook until all water evaporates and dumplings turn golden brown
   source: Joshua Weissman
   url: https://www.joshuaweissman.com/post/dumplings
+
+- id: Potato knödel
+  kitchen: Central_European
+  meal:
+    - Side
+  diet:
+    - Vegetarian
+  ingredients:
+    - 660g potatoes
+    - 300g flour
+    - 2 Tbsp potato starch
+    - 4 tsp salt
+    - 2 eggs
+  instructions:
+    - boil potatoes
+    - grate potatoes and combine with other ingredients
+    - form sausages, with about 8cm diameter and as long as will fit in pot
+    - boil for ~20 min, turn to avoid sticking to the bottom of pot
