@@ -937,3 +937,23 @@
     - grate potatoes and combine with other ingredients
     - form sausages, with about 8cm diameter and as long as will fit in pot
     - boil for ~20 min, turn to avoid sticking to the bottom of pot
+
+- id: Tapenade
+  kitchen: French
+  meal:
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 200g black olives
+    - 10 sun-dried tomatoes
+    - 20 capers
+    - basil / parsley
+    - black pepper
+    - (chili flakes)
+    - (garlic)
+    - (anchovis)
+    - olive oil
+  instructions:
+    - Pulse all ingredients, except olive oil, in blender/mixer
+    - Add olive oil until desired consistency
