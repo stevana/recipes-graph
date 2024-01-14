@@ -957,3 +957,22 @@
   instructions:
     - Pulse all ingredients, except olive oil, in blender/mixer
     - Add olive oil until desired consistency
+
+- id: Tirokafteri
+  kitchen: Greek
+  meal:
+    - Side
+  diet:
+    - Vegetarian
+  ingredients:
+    - 400g feta cheese
+    - 200g strained yogurt
+    - 1/2 tsp chili flakes
+    - 1/2 chili pepper
+    - 1/3 clove of garlic
+    - 50g olive oil
+  instructions:
+    - Blend everything, except the feta cheese and yogurt
+    - Fold in crumbled feta cheese and the yogurt
+
+  source: https://akispetretzikis.com/en/recipe/4069/tyrokayterh
