@@ -975,4 +975,32 @@
     - Blend everything, except the feta cheese and yogurt
     - Fold in crumbled feta cheese and the yogurt
 
-  source: https://akispetretzikis.com/en/recipe/4069/tyrokayterh
+  url: https://akispetretzikis.com/en/recipe/4069/tyrokayterh
+
+- id: Pita bread
+  kitchen: Greek
+  meal:
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 200g sourdough starter (100% hydration)
+    - 200g finger warm water
+    - 2 Tbsp maple syrup (or honey)
+    - 2 Tbsp olive oil
+    - 2 tsp salt
+    - 85g whole wheat flour
+    - 300g bread flour
+  instructions:
+    - Combine ingredients and let rest 30 min
+    - Fold, rest 30 min (repeat once or twice)
+    - Bulk ferment 12-16h at room temperature, until double in size
+    - Shape four dough balls
+    - Let proof for 15 min
+    - Preheat oven 260 degrees, with baking stone / flipped sheet pan
+    - Roll out the balls to 20 cm diameter and 0.5cm think disks
+    - Place disks on parchment paper cut out to 20x20 cm squares
+    - Whack the pitas into the oven for 5min
+    - Let cool
+  url: https://vanillaandbean.com/sourdough-pita-bread/
+  source: Traci York
