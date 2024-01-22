@@ -1004,3 +1004,24 @@
     - Let cool
   url: https://vanillaandbean.com/sourdough-pita-bread/
   source: Traci York
+
+- id: Scones
+  kitchen: Northern_European
+  meal:
+    - Side
+  diet:
+    - Vegetarian
+  ingredients:
+    - 225g flour
+    - 3 tsp baking powder
+    - pinch of salt
+    - 55g butter
+    - 25g caster sugar
+    - 150ml oz milk
+    - 1 free-range egg, beaten, to glaze (alternatively use a little milk)
+  instructions:
+    - Heat the oven to 220°C
+    - Combine ingredients (don't knead)
+    - Divide into two balls and roll out, 2cm think disks
+    - Bake 12-15 min
+  url: https://www.bbc.co.uk/food/recipes/scones_1285
