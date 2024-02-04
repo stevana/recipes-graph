@@ -1025,3 +1025,22 @@
     - Divide into two balls and roll out, 2cm think disks
     - Bake 12-15 min
   url: https://www.bbc.co.uk/food/recipes/scones_1285
+
+- id: Kladdkaka
+  kitchen: Northern_European
+  meal:
+    - Dessert
+  diet:
+    - Vegetarian
+  ingredients:
+    - 4 eggs
+    - 3 dl sugar
+    - 3 dl flour
+    - 3 tsp/1 pkg vanilla sugar
+    - 8 Tbsp cacao powder
+    - 2 dl melted butter
+    - (melted chocolate on top, once baked)
+  instructions:
+    - Mix everything together
+    - Bake for 15 min in 200°C
+  source: Elsa
