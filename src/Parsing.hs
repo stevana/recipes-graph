@@ -46,6 +46,7 @@ data Kitchen
   | Middle_Eastern
   | American
   | African
+  | Indian
   deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON, Finite, Display)
 
 data Diet

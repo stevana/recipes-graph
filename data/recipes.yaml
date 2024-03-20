@@ -1044,3 +1044,32 @@
     - Mix everything together
     - Bake for 15 min in 200°C
   source: Elsa
+
+- id: Daal
+  kitchen: Indian
+  diet:
+    - Vegan
+  ingredients:
+    - 450g red lentils
+    - 1 red onion
+    - ginger
+    - garlic
+    - coriander powder
+    - chili powder
+    - turmeric powder
+    - fenugreek leaves
+    - 4-5 tomatoes
+    - cumin seeds
+    - chili flakes
+    - paprika or chili powder
+    - garlic
+
+  instructions:
+    - Soak lentils
+    - Fry onions in oil
+    - Add aromatics followed by tomatoes
+    - Once a paste is formed, add lentils and water
+    - Cook for about 30 min on medium low heat
+    - Heat oil in a separate pot
+    - Plate lentils with a wee mountian of cumin seeds, chili flakes, paprika
+      and garlic on top, then pour hot oil on top
