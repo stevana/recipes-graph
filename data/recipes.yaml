@@ -1047,6 +1047,10 @@
 
 - id: Daal
   kitchen: Indian
+  meal:
+    - Lunch
+    - Dinner
+    - Side
   diet:
     - Vegan
   ingredients:
@@ -1063,7 +1067,6 @@
     - chili flakes
     - paprika or chili powder
     - garlic
-
   instructions:
     - Soak lentils
     - Fry onions in oil
