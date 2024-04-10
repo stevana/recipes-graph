@@ -1101,3 +1101,27 @@
     - pealing the paprika skin easier
     - Blend pealed paprikas, onion and nuts
     - Add lemon, salt and pepper to taste
+
+- id: Ful Mudammas
+  kitchen: Middle_Eastern
+  meal:
+    - Breakfast
+    - Lunch
+    - Brunch
+    - Dinner
+  diet:
+    - Vegan
+  ingredients:
+    - 2 cups of dry fava beans
+    - cumin
+    - lemon
+    - parsley
+    - hot peppers
+    - tomatoes
+    - garlic
+    - green onions
+    - cucumber
+    - olive oil
+    - salt
+    - pepper
+ url: https://www.themediterraneandish.com/foul-mudammas-recipe/
