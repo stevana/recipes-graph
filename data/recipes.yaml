@@ -1127,7 +1127,7 @@
   url: https://www.themediterraneandish.com/foul-mudammas-recipe/
 
 - id: Lobio
-  kitchen: Georigan
+  kitchen: Georgian
   meal:
     - Dinner
   diet:
@@ -1152,7 +1152,7 @@
   url: https://nofrillskitchen.com/lobio-recipe/
 
 - id: Ajika
-  kitchen: Georigan
+  kitchen: Georgian
   meal:
     - Side
   diet:
@@ -1166,7 +1166,7 @@
     - Olive oil
 
 - id: Pkhali
-  kitchen: Georigan
+  kitchen: Georgian
   meal:
     - Side
   diet:
@@ -1185,7 +1185,7 @@
     - pomegranate seeds (garnish)
 
 - id: Khachapuri
-  kitchen: Georigan
+  kitchen: Georgian
   meal:
     - Side
   diet:
