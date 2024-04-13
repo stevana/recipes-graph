@@ -1125,3 +1125,87 @@
     - salt
     - pepper
   url: https://www.themediterraneandish.com/foul-mudammas-recipe/
+
+- id: Lobio
+  kitchen: Georigan
+  meal:
+    - Dinner
+  diet:
+    - Vegan
+  ingredients:
+    - 400g kidney beans
+    - 150g walnuts
+    - 1 medium onions
+    - (5 cloves of garlic)
+    - 1 Tbsp Ajika
+    - 1 1/2 tsp blue fenugreek
+    - 1 tsp korriander (dried)
+    - 1 bay leaf
+    - 1 tsp bohnenkraut (savory)
+    - 50 ml lemon juice
+  instructions:
+    - Fry up onions
+    - Add crushed walnuts, toast for a bit
+    - Stir in Ajika and spices
+    - Add and crush up the beans
+    - Add 100 ml bean water
+  url: https://nofrillskitchen.com/lobio-recipe/
+
+- id: Ajika
+  kitchen: Georigan
+  meal:
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 1 part chllies (remove seeds)
+    - 1/2 part garlic
+    - 1/3 part walnuts
+    - 1/10 part korriander fresh / dried
+    - 1/20 part salt
+    - Olive oil
+
+- id: Pkhali
+  kitchen: Georigan
+  meal:
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 500g spinich
+    - 150g walnuts
+    - 1 onion
+    - (1 clove of garlic)
+    - fresh korriander
+    - fresh parsley
+    - 2-3 Tbsp white vinegar
+    - 1 heaped tsp chilli flakes
+    - (1 heaped tsp dried marigold)
+    - 1 heaped tsp blue fenugreek
+    - pomegranate seeds (garnish)
+
+- id: Khachapuri
+  kitchen: Georigan
+  meal:
+    - Side
+  diet:
+    - Vegetarian
+  ingredients:
+    - flour
+    - milk
+    - yeast
+    - salt
+    - mozzarella
+    - feta
+    - riccotta
+    - eggs
+    - parsley
+    - butter
+  instructions:
+    - Make a dough and shape it as a khachapuri boats
+    - Heat oven to 190°C
+    - Fill the boats with cheeses
+    - Bake 20 min
+    - Take out boats, crack an egg into them
+    - Bake for another 8-15 min depending on desired egg consistency
+  url: https://www.kingarthurbaking.com/recipes/khachapuri-georgian-cheese-bread-recipe

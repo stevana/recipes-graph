@@ -47,6 +47,7 @@ data Kitchen
   | American
   | African
   | Indian
+  | Georgian
   deriving (Eq, Show, Enum, Bounded, Generic, ToJSON, FromJSON, Finite, Display)
 
 data Diet
