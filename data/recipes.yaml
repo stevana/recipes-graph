@@ -1211,3 +1211,24 @@
     - Take out boats, crack an egg into them
     - Bake for another 8-15 min depending on desired egg consistency
   url: https://www.kingarthurbaking.com/recipes/khachapuri-georgian-cheese-bread-recipe
+
+- id: Cheesecake
+  kitchen: Central_European
+  meal:
+    - Dessert
+  diet:
+    - Vegetarian
+  ingredients:
+    - 500g regular quark (20% fat)
+    - 3 eggs
+    - 50g flour
+    - 125g margarine
+    - 105g sugar
+    - 4g baking powder
+    - 1 pkg vanilla sugar
+    - lemon juice to taste
+  instructions:
+    - Heat oven to 170°C
+    - Butter a 20 cm in diameter springform pan
+    - Whisk all ingredients together and pour into form
+    - Bake for 45-60 min
