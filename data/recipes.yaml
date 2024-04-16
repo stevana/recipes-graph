@@ -779,12 +779,32 @@
 
 - id: Nigerian stewed beans (ewa riro)
   meal:
+    - Lunch
     - Dinner
   kitchen: African
   diet:
     - Vegan
   ingredients:
-    - black-eyed peas
+    - 500g dried black-eyed peas
+    - 2 small red onions
+    - 2 red peppers
+    - 300g tomatoes
+    - 180ml unrefined red palm oil
+    - 1 nori sheet
+    - 1 habanero / scotch bonnet
+    - 2 bird eye chiilies
+  instructions:
+    - Soak beans 4-12h
+    - Boil beans 30-60 min, until soft
+    - Blend peppers, tomatoes and onions
+    - Heat palm oil
+    - Add chilies to the oil, let infuse for a min or two
+    - Add blended veg to the oil, cook on medium heat for 10 min or so
+    - Add chopped up nori to the veg and oil pot
+    - Drain beans, save water
+    - Add beans to pot and simmer for another 10 min
+  source: Serious Eats
+  url: https://www.seriouseats.com/ewa-riro-nigerian-stewed-beans-recipe-8594156
 
 - id: Flammkuchen / tarte flambée
   meal:
