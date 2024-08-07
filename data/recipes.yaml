@@ -792,7 +792,7 @@
     - 180ml unrefined red palm oil
     - 1 nori sheet
     - 1 habanero / scotch bonnet
-    - 2 bird eye chiilies
+    - 2 bird eye chilies
   instructions:
     - Soak beans 4-12h
     - Boil beans 30-60 min, until soft
@@ -1270,7 +1270,7 @@
   diet:
     - Vegan
   ingredients:
-    - 1/3 cup lightly packed light brown sugar
+    - 1/2 cup lightly packed light brown sugar
     - 1/3 cup apple cider vinegar
     - 1 cup prepared red salsa
     - 345g dried (or 3 cans) pinto beans
@@ -1283,11 +1283,91 @@
     - 1 teaspoon garlic powder
     - 1/2 teaspoon Mexican oregano
     - 1/4 teaspoon cayenne pepper
-    - 1 12-ounce bottle Mexican lager-style beer (such as Modelo)
+    - 35cl bottle Mexican lager-style beer (such as Modelo)
     - 3 strips bacon (optional)
   instructions:
     - Soak beans over night
+    - Rinse and cook beans for an hour
     - Heat oven to 200°C
     - Bake until liquid has reduced, 1 to 1,5h
   source: Chef John
   url: https://www.youtube.com/watch?v=pj7dEr6rZ7Q
+
+- id: Muhammara
+  kitchen: Middle_Eastern
+  meal:
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 5 red peppers
+    - 1 onion
+    - 2 tomatoes
+    - 1 red chili
+    - olive oil
+    - salt
+    - pepper
+    - 1 1/2 Tbsp tomato paste
+    - 2 tsp cumin seeds
+    - 2 tsp coriander seeds
+    - 8 garlic cloves
+    - 2 Tbsp pomegranate molasses
+    - 100g walnuts
+    - 100g pomegranate seeds
+    - parsley
+  instructions:
+    - Heat oven to 220°C
+    - Roast peppers, onion and chili with some olive oil, salt and plenty of
+      black pepper for 20 min
+    - Toast spices and grind to powder
+    - Fry tomato paste until deep red
+    - Flip the vegetables, add garlic cloves and roast for another 20 min
+      until charred
+    - Peel vegetables
+    - Blend everything with 1 Tbsp of the molasses
+    - Stir in pomegranate seeds
+    - Serve with drizzle of oil and the remaining 1 Tbsp of the molasses and
+      sprinkle some pomegranate seeds on top
+
+- id: Mooga gathi
+  kitchen: Indian
+  meal:
+    - Lunch
+    - Dinner
+  diet:
+    - Vegan
+  ingredients:
+    - 1 cup dried Mung beans
+    - 2 green chilies
+    - bunch of curry leaves
+    - 4 dry red chilies
+    - 2 petals star anise
+    - nutmeg
+    - 6 cloves
+    - 6 peppercorn
+    - 1 Tbsp coriander seeds
+    - 1/2 cup coconut
+    - 1 tsp tamarind
+    - 1 tsp tumeric powder
+    - salt
+    - jaggery/sugar
+    - 1 tsp mustard seeds
+    - hing (asafoetida)
+    - bunch of corriander
+  instructions:
+    - Rinse and soak beans 8-10h
+    - Drain beans, leave covered in colander for 24h
+    - Run warm water over sprouted beans and rub them to remove
+      their skin
+    - Place bean in pot, barely covered with water, add some curry
+      leaves and green chilies, cook for about 10 min (almost all
+      water gone)
+    - Toast red chilies, star anise, nutmeg, cloves, peppercorns,
+      coriander seeds and grind into a masala together with coconut,
+      tamarind and tumeric powder
+    - Add masala to beans
+    - Season with salt and jaggery/sugar
+    - Make a tadka by heating up oil and adding mustard seeds, hing and curry leaves
+    - Pour tadka over curry and serve with chopped corriander as garnish
+
+  url: https://www.youtube.com/watch?v=F0oJ_W4Zkpg
