@@ -1168,7 +1168,7 @@
     - (5 cloves of garlic)
     - 1 Tbsp Ajika
     - 1 1/2 tsp blue fenugreek
-    - 1 tsp korriander (dried)
+    - 1 tsp coriander (dried)
     - 1 bay leaf
     - 1 tsp bohnenkraut (savory)
     - 50 ml lemon juice
@@ -1187,11 +1187,11 @@
   diet:
     - Vegan
   ingredients:
-    - 1 part chllies (remove seeds)
+    - 1 part chilies (remove seeds)
     - 1/2 part garlic
     - 1/3 part walnuts
-    - 1/10 part fresh korriander
-    - 1/10 part dried korriander
+    - 1/10 part fresh coriander
+    - 1/10 part dried coriander
     - 1/20 part salt
     - Olive oil
     - White wine vinegar
@@ -1203,11 +1203,11 @@
   diet:
     - Vegan
   ingredients:
-    - 500g spinich
+    - 500g spinach
     - 150g walnuts
     - 1 onion
     - (1 clove of garlic)
-    - fresh korriander
+    - fresh coriander
     - fresh parsley
     - 2-3 Tbsp white vinegar
     - 1 heaped tsp chilli flakes
@@ -1369,5 +1369,51 @@
     - Season with salt and jaggery/sugar
     - Make a tadka by heating up oil and adding mustard seeds, hing and curry leaves
     - Pour tadka over curry and serve with chopped corriander as garnish
-
   url: https://www.youtube.com/watch?v=F0oJ_W4Zkpg
+
+- id: Carrot and walnut spread
+  kitchen: Central_European
+  meal:
+    - Breakfast
+  diet:
+    - Vegan
+  ingredients:
+    - 4 carrots
+    - 1 handful of walnuts
+    - 50 ml vegetable stock
+    - 1 clove garlic (or onion)
+    - Pinch of harissa, pepper or chili sauce
+    - 1/2 lemon, juiced
+    - salt
+  instructions:
+    - Toast walnuts until fragrant
+    - Dice carrots and fry in olive oil for 5 mins
+    - Deglaze with stock and simmer for another 5 min
+    - Transfer into mixing bowl
+    - Press garlic and lemon juice and add the spice into bowl
+    - Add toasted walnuts and blend
+    - Season with salt
+  url: https://www.100affen.de/rezepte/94/karotten-nuss-aufstrich
+
+- id: Courgette and hazelnut spread
+  kitchen: Central_European
+  meal:
+    - Breakfast
+  diet:
+    - Vegan
+  ingredients:
+    - 1 courgette
+    - 20 g hazelnuts
+    - 1 small onion
+    - 1 Tbsp rosmary
+    - 1/2 Tbsp thyme
+    - salt and pepper
+  instructions:
+    - Dice and salt courgette
+    - Toast hazelnuts
+    - Fry onion and courgette in olive oil
+    - Add herbs and 150 ml of water, cover and simmer until soft
+    - Transfer into sieve and squeeze out as much water as possible
+    - Add hazelnuts and blend
+    - Season with salt and pepper
+  url: https://www.franzoesischkochen.de/zucchini-haselnuss-aufstrich/
