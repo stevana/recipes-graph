@@ -1417,3 +1417,25 @@
     - Add hazelnuts and blend
     - Season with salt and pepper
   url: https://www.franzoesischkochen.de/zucchini-haselnuss-aufstrich/
+
+- id: Vegan ricotta
+  kitchen: Italian
+  meal:
+    - Breakfast
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 250 g cashew nuts
+    - 80 ml water
+    - 2-3 Tbsp nutritional yeast
+    - 1 clove of garlic or 1/2 tsp garlic powder
+    - 2 Tbsp lemon juice
+    - salt and pepper to taste
+    - (pinch of paprika powder)
+  instructions:
+    - Soak nuts for 4 hours (or over night), or boil for 10 minutes
+    - Rinse the nuts and tranfer into mixing bowl
+    - Blend together with other ingredients
+  source: Bianca Zapatka
+  url: https://biancazapatka.com/de/veganer-cashew-ricotta/#recipe
