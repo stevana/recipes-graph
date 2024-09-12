@@ -1439,3 +1439,25 @@
     - Blend together with other ingredients
   source: Bianca Zapatka
   url: https://biancazapatka.com/de/veganer-cashew-ricotta/#recipe
+
+- id: Apple crumble pie
+  diet:
+    - Vegetarian
+  meal:
+    - Dessert
+  ingredients:
+    - 3 apples
+    - 200 g flour
+    - 100 g oats
+    - 100 g sugar
+    - pinch of salt
+    - cinnamon
+  instructions:
+    - Combine flower, oats, sugar and salt in a bowl
+    - Add cold butter cut up in dices, work quickly and pinch the dices with
+      the dry ingredients to form bigger crums
+    - Peel, core and slice the apples
+    - Place sliced apples in a generously buttered baking form
+    - Sprinkle the apples with cinnamon (~2 tsps) and sugar (~2 Tbsps)
+    - Pour crumbled dough on top of the apples
+    - Bake 20-25 min on 225°C
