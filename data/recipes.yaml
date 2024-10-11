@@ -128,9 +128,20 @@
     - sweet paprika
     - bay leaves
     - crushed caraway seeds
+    - chilies
     - pepper
     - salt
     - (sausages)
+  instructions:
+    - Dice and boil potatoes separately (the acidity of the sauerkraut
+      seems to affect the cooking process)
+    - Fry onions in lard, butter or oil
+    - Add flour to make roux
+    - Add and infuse spices
+    - Add sauerkraut and stock
+    - Drain potatoes when soft
+    - Boil sauerkraut for 10-20 min
+    - Add in potatoes and serve
 
 - id: Wraps
   meal:
