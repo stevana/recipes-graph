@@ -133,15 +133,13 @@
     - salt
     - (sausages)
   instructions:
-    - Dice and boil potatoes separately (the acidity of the sauerkraut
-      seems to affect the cooking process)
+    - Peal and dice and potatoes
     - Fry onions in lard, butter or oil
     - Add flour to make roux
     - Add and infuse spices
-    - Add sauerkraut and stock
-    - Drain potatoes when soft
-    - Boil sauerkraut for 10-20 min
-    - Add in potatoes and serve
+    - Add stock and potatoes, boil for 5 min (the acidity of the sauerkraut
+      seems to affect the cooking process of the potatoes)
+    - Add sauerkraut and boil for another 10-20 min until potatoes are soft
 
 - id: Wraps
   meal:
