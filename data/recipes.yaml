@@ -1231,14 +1231,17 @@
   diet:
     - Vegetarian
   ingredients:
-    - flour
-    - milk
+    - 770g flour
+    - 130g milk
+    - 130g water
+    - 1 egg
     - yeast
+    - 33 ml oil
     - salt
     - mozzarella
     - feta
     - riccotta
-    - eggs
+    - 2 eggs
     - parsley
     - butter
   instructions:
@@ -1248,7 +1251,31 @@
     - Bake 20 min
     - Take out boats, crack an egg into them
     - Bake for another 8-15 min depending on desired egg consistency
-  url: https://www.kingarthurbaking.com/recipes/khachapuri-georgian-cheese-bread-recipe
+  url: https://georgianrecipes.net/2013/03/29/acharuli-ajarian-khachapuri/
+
+- id: Khinkali
+  kitchen: Georgian
+  meal:
+    - Dinner
+  diet:
+    - Vegetarian
+    - Meat
+  ingredients:
+    - 1.1 kg flour
+    - 2 eggs
+    - 450 ml of warm water
+    - 400 g mushrooms (or 350 grams of ground beef and pork mix)
+    - 200 g of water
+    - 1 tsp ground coriander seed
+    - 1-2 mild red chilies minced 
+    - 3 tbsp fresh tarragon
+    - salt
+    - 1/2 tsp ground caraway seed
+    - 2 small onions optional
+  instructions:
+    - mushroom use: ground coriander seeds, and taragon
+    - meat uses: caraway seeds, add water in 25 g batches to make it juicy
+  url: https://georgianrecipes.net/2013/03/29/khinkali
 
 - id: Cheesecake
   kitchen: Central_European
