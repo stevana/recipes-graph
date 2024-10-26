@@ -1,0 +1,7 @@
+* Add portion size, e.g. serves 4 ppl, or 30 dumplings.
+* Make ingredients and instructions tree-like, so we can do things like:
+  - ingredients:
+    - dough:
+      - foo
+    - filling:
+      - bar
