@@ -1505,3 +1505,24 @@
     - Sprinkle the apples with cinnamon (~2 tsps) and sugar (~2 Tbsps)
     - Pour crumbled dough on top of the apples
     - Bake 20-25 min on 225°C
+
+- id: Falafel
+  diet:
+    - Vegan
+  meal:
+    - Side
+  ingredients:
+    - 1 cup dried chickpeas
+    - 1/2 yellow onion, diced
+    - 4 cloves minced garlic
+    - 1/2 cup chopped Italian parsley
+    - 1 1/2 tsp salt, or to taste
+    - 1 tsp freshly ground black pepper
+    - 1 tsp cumin
+    - 1/2 tsp ground coriander
+    - 1/8 tsp cayenne pepper
+    - 1/4 tsp baking soda (natron)
+    - 1 rounded tablespoon flour
+    - 2 tsp lemon juice
+  url: https://foodwishes.blogspot.com/search?q=falafel
+  source: Chef John
