@@ -1526,3 +1526,53 @@
     - 2 tsp lemon juice
   url: https://foodwishes.blogspot.com/search?q=falafel
   source: Chef John
+
+- id: Udon noodles
+  diet:
+    - Vegan
+  meal:
+    - Side
+  ingredients:
+    - 400g all-purpose flour (4 medium portions)
+    - 180g water
+    - 20g salt
+    - Corn starch for spreading
+  instructions:
+    - Disolve salt in water
+    - Combine flour and water, pouring a little water at the time until dough
+      is formed
+    - Knead until smooth, rest 30 min
+    - Put dough in a plastic bag, wrap in two towels and knead it with your
+      feet for 1 min
+    - Fold the dough into a ball, and continue stomping on it for 10 min
+    - Rest for 2h
+    - Roll out to 5 mm thinkness, use corn starch to avoid sticking
+    - Fold like accordion and cut 5 mm stripes
+    - Dust with more corn starch and unfold noodles
+    - Boil for 7 min
+  url: https://www.youtube.com/watch?v=ZupVqKSOZN8
+
+- id: Udon noodle stir fry
+  diet:
+    - Vegan
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - 1 red onion
+    - 4 cloves of garlic
+    - 1 carrot
+    - 150g of broccoli
+    - 150g of cabbage
+    - 100g of mushrooms
+    - 2 Tbsp light soy sauce
+    - 2 tsp dark soy sauce
+    - 2 tsp black vinegar
+    - 2 tsp sesame oil
+    - 2 Tbsp oyster sauce
+  instructions:
+    - Make the sauce
+    - Boil the noodles
+    - Fry the vegetables
+    - Combine everything
+  url: https://www.youtube.com/watch?v=aQlVgSCdUJo
