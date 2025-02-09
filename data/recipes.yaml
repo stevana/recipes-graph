@@ -1579,3 +1579,23 @@
     - Fry the vegetables
     - Combine everything
   url: https://www.youtube.com/watch?v=aQlVgSCdUJo
+
+- id: Vanilla custard
+  diet:
+    - Vegetarian
+  meal:
+    - Dessert
+  ingredients:
+    - 0.5 L milk
+    - 1 vanilla pod
+    - 50 g sugar
+    - 2 egg yolks
+    - 20 g starch
+  instructions:
+    - Deseed and soak vanilla pod in milk over night
+    - Beat eggs and add sugar and starch in a pan
+    - Whisk in a bit of milk and put the pan on medium heat
+    - Bring up to 82°C (eggs starts cooking after the point)
+    - Check consistency by running finger over the back of wooden spoon, if the
+      sauce stays separated, then it's good
+    - Cool down, and refrigerate
