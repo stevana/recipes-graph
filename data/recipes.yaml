@@ -1529,6 +1529,7 @@
   source: Chef John
 
 - id: Udon noodles
+  kitchen: Asian
   diet:
     - Vegan
   meal:
@@ -1554,6 +1555,7 @@
   url: https://www.youtube.com/watch?v=ZupVqKSOZN8
 
 - id: Udon noodle stir fry
+  kitchen: Asian
   diet:
     - Vegan
   meal:
