@@ -1508,6 +1508,7 @@
     - Bake 20-25 min on 225°C
 
 - id: Falafel
+  kitchen: Middle_Eastern
   diet:
     - Vegan
   meal:
