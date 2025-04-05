@@ -1602,3 +1602,21 @@
     - Check consistency by running finger over the back of wooden spoon, if the
       sauce stays separated, then it's good
     - Cool down, and refrigerate
+
+- id: Beet carpaccio salad
+  diet:
+    - Vegetarian
+  meal:
+    - Starter
+  ingredients:
+    - 2 tablespoons (25g) capers, drained, rinsed, and chopped
+    - 2 teaspoons (10ml) whole grain mustard
+    - 1 tablespoon (15ml) juice from half a lemon, the other half cut into wedges
+    - 3 tablespoons (45ml) extra-virgin olive oil
+    - Kosher salt and freshly ground black pepper
+    - 3 ounces arugula leaves (about 3 loosely packed cups; 85g)
+    - 1 1/2 ounces (45g) red onion (about 1/4 of a medium onion), very thinly sliced
+    - 4 to 6 ounces (115 to 170g) beets finely sliced
+    - 1 ounce (30g) Parmigiano-Reggiano
+    url: https://www.seriouseats.com/steak-carpaccio-salad-recipe-8687242
+    source: J. Kenji López-Alt
