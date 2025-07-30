@@ -80,13 +80,29 @@
     - eggs
     - pak choi
 
-- id: Zuccini kuchen
+- id: Zucchini–Kuchen
   diet:
     - Vegetarian
   meal:
     - Dessert
   ingredients:
-    - zuccini
+    - 3 eggs
+    - 250 g brown sugar
+    - 150 g oil
+    - 250 g flour
+    - 1 tsp baking soda (natron)
+    - 2 tsp baking powder (backpulver)
+    - 1 tsp cinnamon
+    - 200 g ground hazelnuts
+    - 300 g zucchini grated
+    - choclate for coating
+  instructions:
+    - Stir sugar, oil and eggs until foamy. Combine flour, Natron, Backpulver
+      and cinnamon. Add ground hazelnuts and mix well. Combine dry and wet
+      ingredients and stir well. Last add the grated zucchini and mix everything
+      well.
+    - Spread on baking tray or into baking form.
+    - Bake at 180°C for approx. 40 minutes
 
 - id: Empanadas
   meal:
@@ -1329,6 +1345,7 @@
     - 1/4 teaspoon cayenne pepper
     - 35cl bottle Mexican lager-style beer (such as Modelo)
     - 3 strips bacon (optional)
+    - Chives (optional garnish)
   instructions:
     - Soak beans over night
     - Rinse and cook beans for an 1h 15 min
