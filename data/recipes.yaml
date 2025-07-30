@@ -180,20 +180,27 @@
     - bechamel
     - tomatoe sauce
 
-- id: Courgette pasta
+- id: Courgette/Zucchini pasta
   meal:
     - Lunch
     - Dinner
   kitchen: Italian
   diet:
     - Vegetarian
+    - Vegan
   ingredients:
     - oil
     - red onion
-    - ricotta
+    - ricotta (or vegan ricotta, see separate recipe)
     - zucinni
     - parmesan cheese
     - pasta
+  instructions:
+    - Fry zucchinis until soft and slightly browned.
+    - Fry onions until they are caramelising/ soft and brown. 
+    - Stir in the ricotta. 
+    - Mix with pasta and add pastawater until it has the desired consistency.
+    - Add Parmesan.
 
 - id: Bean soup
   meal:
@@ -1239,6 +1246,38 @@
     - (1 heaped tsp dried marigold)
     - 1 heaped tsp blue fenugreek
     - pomegranate seeds (garnish)
+
+- id: Georgian zucchini rolls (Badrijani-like)
+  kitchen: Georgian
+  meal:
+    - Starter
+    - Side
+  diet:
+    - Vegan
+  ingredients:
+    - 750 g zucchini
+    - 150 g walnuts
+    - 2 cloves of garlic
+    - 1 onion, small
+    - 1/2 tsp coriander powder
+    - 1/2 tsp fenugreek
+    - 1/2 tsp chilipowder
+    - 1/2 tsp salt
+    - 1 handful of fresh coriander
+    - 1 handful of fresh parsley
+    - 1 Tbsp apple vinegar
+    - 100 ml water
+    - 1/2 pomegranate
+  instructions:
+    - Cut 0.3-0.5 cm trick slices of the zucchini, salt and let rest to extract water
+    - Fry on high heat until brown, set aside
+    - Chop and fry onion and garlic
+    - Combine onion and garlic with the rest of the ingredients and mix into a paste
+    - Fill the zucchini with the paste and roll them up
+    - Garnish with pomegranate
+  source: Andy
+  url: https://cheapandcheerfulcooking.com/vegane-zucchiniroellchen-georgischer-art/
+
 
 - id: Khachapuri
   kitchen: Georgian
