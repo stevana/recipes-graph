@@ -1676,3 +1676,22 @@
     - 1 ounce (30g) Parmigiano-Reggiano
   url: https://www.seriouseats.com/steak-carpaccio-salad-recipe-8687242
   source: J. Kenji López-Alt
+
+- id: Zucchini/courgette lasagne
+  diet:
+    - Vegetarian
+  meal:
+    - Dinner
+  ingredients:
+    - zucchini
+    - riccotta (or vegan riccotta, see separate recipe)
+    - bechamel
+    - cheese
+    - onion
+    - carrot
+  instructions:
+    - Slice and salt zucchini
+    - Fry onions and carrots
+    - Fry zucchini, once they released water
+    - Make bechamel
+    - Assemble, each layer should have everything
