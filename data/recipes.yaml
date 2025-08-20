@@ -110,7 +110,39 @@
   diet:
     - Vegetarian
   ingredients:
-    - red lentils
+    - For the crust:
+    - 350g plain flour
+    - 150g butter (cold)
+    - 75g mature cheddar cheese (or other well-flavoured cheese)
+    - ½ tsp cayenne pepper (or hot paprika or chilli powder)
+    - ½ tsp smoked paprika
+    - ~100ml ketchup
+    - cold water (a small amount only to bind the dough)
+    - 1 egg (for glazing)
+    - For filling:
+    - 150g red split lentils
+    - 1 medium onion
+    - 1 large carrot 
+    - 1 stick celery
+    - 1 wweet red pepper
+    - 2 cloves garlic
+    - 400g Tinned tomatoes
+    - 350ml water (you might need more or less)
+    - 1 heaped teaspoon sweet paprika
+    - ½ tsp ground cumin
+    - small pinch of saffron
+    - 1½ tsp bouillon powder (or a stock cube)
+    - ½ tsp Marmite (omit if your stock cube is salty)
+    - thyme, rosemary, sage, bay, savory, basil (or 1 heaped teaspoon mixed dried herbs)
+  instructions:
+    - Fire roast pepers, and peel
+    - Fry onion, carrot and celery
+    - Add herbs, cumin and garlic
+    - Add paprika, rinsed lentils and tomatos
+    - Add safron, bouillon, marmite, sweet paprika
+    - Add water, cover and simmer until lentils are done
+  source: Atomic Shrimp
+  url: https://www.youtube.com/watch?v=cX-wezVGbqw
 
 - id: Quiche
   meal:
