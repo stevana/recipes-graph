@@ -1741,3 +1741,29 @@
     - olive oil
     - curry powder
     - milk
+
+- id: Lemon carbonara
+  diet:
+    - Vegetarian
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - 1 bio lemon
+    - 500ml stock
+    - 2 eggs
+    - 80g Parmesan 
+    - parsley
+    - 2 Tbsp butter
+  instructions:
+    - Spaghetti in reichlich Salzwasser kochen. 
+    - Gleichzeitig die Schale einer saftigen Bio-Zitrone fein abreiben. 
+    - Den Saft auspressen und mit 450 ml Hühner- oder Gemüsebrühe um die Hälfte einkochen. 
+    - Parmesan reiben, mit restlicher Brühe und 2 Eiern verquirlen. 
+    - Die Blättchen von 1 Bund Petersilie zupfen und hacken. 
+    - Mit 2 EL Butter und der Zitronenschale unter die eingekochte Brühe rühren. 
+    - Spaghetti abgießen, kurz abtropfen und dann gleich mit Brühe und
+      Parmesan-Eier-Mischung vermengen, bis alle Nudeln von einer cremigen
+      Emulsion überzogen sind. Sofort servieren.
+  url: https://sz-magazin.sueddeutsche.de/probier-doch-mal/einfache-spaghetti-al-limone-mit-zitronen-parmesan-sauce-82337
+
