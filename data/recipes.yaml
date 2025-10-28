@@ -66,7 +66,7 @@
     - mushrooms
     - noodles
 
-- id: Ramen
+- id: Ramen noodles
   meal:
     - Lunch
     - Dinner
@@ -75,10 +75,13 @@
     - Vegetarian
   kitchen: Asian
   ingredients:
-    - noodles
-    - mushrooms
-    - eggs
-    - pak choi
+    - 6g baked baking soda
+    - 4g salt
+    - 160 ml water
+    - 396g high protein flour
+    - 4 g vital wheat gluten (gives more "chew")
+  url: https://www.seriouseats.com/homemade-ramen-noodles
+  source: Serious eats
 
 - id: Zucchini–Kuchen
   diet:
@@ -1767,3 +1770,22 @@
       Emulsion überzogen sind. Sofort servieren.
   url: https://sz-magazin.sueddeutsche.de/probier-doch-mal/einfache-spaghetti-al-limone-mit-zitronen-parmesan-sauce-82337
 
+- id: Andijvie stamppot (Dutch endive mash)
+  diet:
+    - Vegetarian
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - 1kg potatoes
+    - 500g endives (or any bitter salad you want to get rid of)
+    - 200ml milk
+    - 50g butter
+    - 1 Tbsp mustard
+    - salt
+    - pepper
+    - nutmeg
+  instructions:
+    - Make a potato mash
+    - Fold in the chopped up salad
+    - Season to taste

@@ -1,6 +1,6 @@
 packages: .
 
--- with-compiler: ghc-9.4.6
+with-compiler: ghc-9.4.7
 
 reject-unconstrained-dependencies: all
 
