@@ -1789,3 +1789,57 @@
     - Make a potato mash
     - Fold in the chopped up salad
     - Season to taste
+
+- id: Milk ramen
+  kitchen: Asian
+  diet:
+    - Vegan
+  meal:
+    - Lunch
+    - Dinner
+  ingredients:
+    - 2 cloves garlic
+    - 20g of ginger
+    - 2 Tbsp sesame oil
+    - 2 Tbsp miso
+    - 2 tsp sugar
+    - 1 Tbsp chili bean sauce
+    - 2 tsp kombu powder
+    - 2 Tbsp soy sauce
+    - 300ml soy milk
+    - ramen noodles
+    - green onions
+    - sesame seeds
+  instructions:
+    - Fry garlic, ginger and white parts of the green onion in the sesame oil
+    - Add the other ingreedients, except the milk
+    - Add milk and bring to boil
+    - Cook ramen separately and combine
+    - Serve with chopped up green onlions and sesame seeds as topping
+  url: https://www.youtube.com/watch?v=riGNm51LiSw
+
+- id: Pink Pickled Turnips
+  kitchen: Middle_Eastern
+  diet:
+    - Vegan
+  meal:
+    - Side
+  ingredients:
+    - 1½ cups hot water
+    - ½ cup white vinegar
+    - 2 Tbsp kosher salt
+    - 1 Tbsp granulated sugar
+    - 1 garlic clove smashed
+    - 2 bay leaves
+    - 1 pound turnips peeled and cut into ½ inch thick batons (about 3 small ones)
+    - 1 small beet
+  instructions:
+    - In a glass jar, place the hot water, vinegar, salt, sugar, garlic and bay
+      leaves. 
+    - Stir continuously until the salt and sugar dissolve.
+    - Add the turnips and beets in the jar, making sure they are submerged in
+      the vinegar mixture. Allow to cool.
+    - When cool, seal the glass jar tightly and allow to sit for 5 days at room
+      temperature in a cool dark place. Refrigerate afterwards and use within
+      one month.
+  url: https://feelgoodfoodie.net/recipe/pickled-turnips/
