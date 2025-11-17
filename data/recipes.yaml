@@ -743,6 +743,8 @@
     - pumpkin 500g
     - stock 800ml
     - butter
+    - chilli
+    - bay leaf
     - onion
     - lime
     - creme fraiche
@@ -1841,4 +1843,22 @@
     - When cool, seal the glass jar tightly and allow to sit for 5 days at room
       temperature in a cool dark place. Refrigerate afterwards and use within
       one month.
-  url: https://feelgoodfoodie.net/recipe/pickled-turnips/
+  url: https://feelgoodfoodie.net/recipe/pickled-turnips
+
+- id: Mascarpone Amaretti mousse
+  kitchen: Italian
+  diet:
+    - Vegetarian
+  meal:
+    - Dessert
+  ingredients:
+    - 500g mascarpone
+    - 200ml cream
+    - 115g powderded sugar
+    - 165g Amaretti coarsely crushed plus more for garnish
+    - 33ml Amaretto
+  instructions:
+    - Whip the cream.
+    - Mix mascarpone with powdered, crushed Amaretti and Amaretto.
+    - Carefully fold in the cream cream.
+    - Serve immediately or keep in the fridge until serving.
