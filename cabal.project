@@ -2,6 +2,8 @@ packages: .
 
 with-compiler: ghc-9.4.7
 
+optimization: False
+
 reject-unconstrained-dependencies: all
 
 constraints: QuickCheck +old-random
