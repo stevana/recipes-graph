@@ -1886,7 +1886,9 @@
   diet:
     - Vegetarian
   meal:
-    - Dessert
+    - Lunch
+    - Dinner
+    - Side
   ingredients:
     - 1 Savoy cabbage (ca. 1,5 - 2 kg)
     - 1,5 - 2 kg potatoes, preferably waxy (equal amounts of cabbage and potatoes)
@@ -1916,3 +1918,31 @@
     - Coat an oven pan with butter and add the vegetable mix.
     - Sprinkle breadcrumbs on top and cheese if desired.
     - Bake around 30 minutes at around 200 C.
+
+- id: Tiramisu
+  kitchen: Italian
+  diet:
+    - Vegetarian
+  meal:
+    - Dessert
+  ingredients:
+    - 15 g cacao
+    - 100 g coffee
+    - 65 g Kaluha
+    - 15 g Cognac
+    - 1 Tbsp vanilla extract
+    - 4 eggs
+    - 65 g sugar
+    - 1 g salt
+    - 500 g mascarpone
+    - 200 g biscuits
+  instructions:
+    - Brew the coffee and combine with cacao while piping hot
+    - Add the boozes and vanilla extract once cooled down and set aside
+    - In separate metal/glass bowl, combine eggs with sugar and salt
+    - On a steam bath bring up the egg mixture to 71 degrees C
+    - Mix the egg mixture until fluffy, 5-10 min
+    - Fold in mascarpone
+    - Assemble by building layers of biscuits soaked in the coffee mixture
+      interleaved with the egg and mascarepone mixture
+    - Chill in fridge for a couple of hours before serving
