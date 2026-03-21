@@ -1948,3 +1948,29 @@
     - Chill in fridge for a couple of hours before serving
   url: https://www.seriouseats.com/best-tiramisu-recipe
   source: Serious eats
+
+- id: Gratin Dauphinois
+  kitchen: French
+  diet:
+    - Vegetarian
+  meal:
+    - Side
+  ingredients:
+    - 2 kg potatoes (waxy)
+    - 400 ml cream
+    - 1-2 cloves of garlic
+    - nutmeg
+    - salt
+    - white pepper
+    - cheese (optional)
+    - butter
+  instructions:
+    - Peel and slice potatoes finely
+    - Pat them dry and salt
+    - Mix cream with garlic and spices, let infuse for 30 min
+    - In a buttered form, assemble in overlapping layer with cream in between layers
+    - Cover with tinfoil and bake 1h 10 minutes on 140°C
+    - Remove tinfoil and bake another 15 minutues on 180°C to golden
+    - Let rest for one hour
+  url: https://www.youtube.com/watch?v=JtJJPIY3-l8
+  source: Marco Pierre White
