@@ -1974,3 +1974,28 @@
     - Let rest for one hour
   url: https://www.youtube.com/watch?v=JtJJPIY3-l8
   source: Marco Pierre White
+
+- id: Pickled beets
+  kitchen: Northern_European
+  diet:
+    - Vegetarian
+  meal:
+    - Side
+  ingredients:
+    - 3 beets
+    - 3 dl water
+    - 2 dl sugar
+    - 1 dl vinegar (12%)
+    - 3 cm ginger
+    - 2 apples
+    - salt
+  instructions:
+    - Boil beets
+    - Peel beets and apples
+    - Slice beets and apples
+    - Heat water and combine with sugar until disolved, then add vinegar
+    - Layer beets and applies interleaved in a jar and fill with the pickle brine
+    - Lasts 4 months at least
+  url: https://www.ica.se/recept/picklade-applen-och-betor-721404/
+  source: ICA
+
