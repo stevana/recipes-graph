@@ -1771,22 +1771,18 @@
     - Lunch
     - Dinner
   ingredients:
-    - 1 bio lemon
-    - 500ml stock
-    - 2 eggs
+    - 1/2 bio lemon
+    - 1 eggs
     - 80g Parmesan 
+    - (asparagus, fried)
     - parsley
     - 2 Tbsp butter
   instructions:
-    - Spaghetti in reichlich Salzwasser kochen. 
-    - Gleichzeitig die Schale einer saftigen Bio-Zitrone fein abreiben. 
-    - Den Saft auspressen und mit 450 ml Hühner- oder Gemüsebrühe um die Hälfte einkochen. 
-    - Parmesan reiben, mit restlicher Brühe und 2 Eiern verquirlen. 
-    - Die Blättchen von 1 Bund Petersilie zupfen und hacken. 
-    - Mit 2 EL Butter und der Zitronenschale unter die eingekochte Brühe rühren. 
-    - Spaghetti abgießen, kurz abtropfen und dann gleich mit Brühe und
-      Parmesan-Eier-Mischung vermengen, bis alle Nudeln von einer cremigen
-      Emulsion überzogen sind. Sofort servieren.
+    - Cook pasta, save some cooking water
+    - Grate zest, press juice of the lemon
+    - Mix egg with zest, juice and butter
+    - Combine pasta, mixing and some cooking water
+    - Serve with parmesan and parsley
   url: https://sz-magazin.sueddeutsche.de/probier-doch-mal/einfache-spaghetti-al-limone-mit-zitronen-parmesan-sauce-82337
 
 - id: Andijvie stamppot (Dutch endive mash)
@@ -1999,3 +1995,26 @@
   url: https://www.ica.se/recept/picklade-applen-och-betor-721404/
   source: ICA
 
+- id: Shkmeruli
+  kitchen: Georgian
+  meal:
+    - Dinner
+  diet:
+    - Meat
+  ingredients:
+    - Chicken on bone (whole or thighs)
+    - 500-600 ml cream / milk
+    - 1 head of garlic
+    - Butter
+    - Flour (if milk is used)
+    - Coriander or parsley
+    - Paprika powder
+    - Cayenne powder
+  instructions:
+    - Fry chicken, 68-74°C, remove
+    - Pestel and mortel the garlic
+    - In the juices, add butter and potentially flour
+    - Add garlic
+    - Add cream / milk before garlic burns
+    - Simmer chicken 10 min in sauce for it to soak up the sauce
+  url: https://www.youtube.com/watch?v=rEQAmACTlUc
