@@ -2002,19 +2002,46 @@
   diet:
     - Meat
   ingredients:
-    - Chicken on bone (whole or thighs)
-    - 500-600 ml cream / milk
+    - Whole chicken
+    - 400 ml cream
     - 1 head of garlic
-    - Butter
-    - Flour (if milk is used)
     - Coriander or parsley
     - Paprika powder
     - Cayenne powder
   instructions:
-    - Fry chicken, 68-74°C, remove
+    - Butterfly chicken by cutting at the breast
+    - Fry chicken in vegetable oil and with a heavy weight on top to press it down
     - Pestel and mortel the garlic
-    - In the juices, add butter and potentially flour
-    - Add garlic
-    - Add cream / milk before garlic burns
-    - Simmer chicken 10 min in sauce for it to soak up the sauce
-  url: https://www.youtube.com/watch?v=rEQAmACTlUc
+    - Remove chicken, add garlic
+    - Add cream before garlic burns
+    - Add chicken back in and simmer 10 min in sauce for it to soak up the sauce
+  url: https://www.youtube.com/watch?v=BQhJfTqPuw0
+
+- id: Tarte Tatin
+  kitchen: French
+  meal:
+    - Dessert
+  diet:
+    - Vegetarian
+    - Vegan
+  ingredients:
+    - 4 pink lady apples (for a 16 cm saucepan);
+    - 125 g butter
+    - 125 g sugar
+    - puff pastry
+  instructions:
+    - Preheat oven to 160°C
+    - Clean pan and rub with thin layer of butter
+    - Layer the bottom of the pan with slices of butter
+    - Pour the sugar on top of the butter in an even layer
+    - Peel, quarter and deseed the apples
+    - Arrange the apples like the petals of flower, standing up and starting
+      from the outside
+    - Cut the puff pastry so that it covers the pan plus 5 extra cm all around
+    - Cover the pan with the pasty and fold the excess pastry on top of itself
+    - Cook for 3-4 hours, check by lifting the puff pastry and look for amber
+      and caramelised apples
+    - Let it cool a little bit before turning it out
+    - You can let it completely cool on the side and reheat for 8-10 mins at
+      160°C to warm it up and help it release nicely.
+  url: https://www.youtube.com/watch?v=vpRV_Pvlczw
