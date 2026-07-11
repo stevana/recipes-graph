@@ -2048,6 +2048,8 @@
   url: https://www.youtube.com/watch?v=vpRV_Pvlczw
 
 - id: Ginger bug
+  meal:
+    - Picnic
   diet:
     - Vegan
   ingredients:
@@ -2062,6 +2064,8 @@
   url: https://www.joshuaweissman.com/recipes/best-homemade-ginger-beer-recipe
 
 - id: Ginger beer
+  meal:
+    - Picnic
   diet:
     - Vegan
   ingredients:
