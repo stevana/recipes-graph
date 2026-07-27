@@ -203,19 +203,6 @@
   ingredients:
     - tortillas
 
-- id: Lasagne
-  meal:
-    - Dinner
-  kitchen: Italian
-  diet:
-    - Meat
-    - Vegetarian
-  ingredients:
-    - pasta
-    - mince
-    - bechamel
-    - tomatoe sauce
-
 - id: Courgette/Zucchini pasta
   meal:
     - Lunch
@@ -2121,3 +2108,34 @@
       sweet, spicy.
   source: Ramon
 
+- id: Vegetable Lasagne
+  meal:
+    - Dinner
+  kitchen: Italian
+  diet:
+    - Vegetarian
+  ingredients:
+    - 1 onion, grated
+    - 2 cloves of galirc, grated
+    - 2 carrots, finely diced
+    - 1 celery stick, finely diced
+    - 200 g celeriac, finely diced
+    - 1 cauliflower, finely diced
+    - 3 thyme springs
+    - 2 bay leaves
+    - salt & white pepper
+    - 500 ml tomato sauce (or passata)
+    - 100g of parmesan
+    - 75 g butter
+    - 50 g plain flour
+    - 500 ml milk
+    - nutmeg
+    - 1 bay leaf
+  instructions:
+    - Make ragu
+    - Make bechamel sauce
+    - Preheat oven to 160°C
+    - Assemble lasasgne, start with oil, ragu, sheet and then sauce
+    - Bake for 30 min
+  source: Marco Pierre White
+  url: https://www.youtube.com/watch?v=7guHXN_p2Ak
