@@ -2139,3 +2139,20 @@
     - Bake for 30 min
   source: Marco Pierre White
   url: https://www.youtube.com/watch?v=7guHXN_p2Ak
+
+- id: Vegan mayo
+  meal:
+    - Side
+  kitchen: French
+  diet:
+    - Vegan
+  ingredients:
+    - 7 Tbsp aquafaba
+    - 2 Tbsp lemon juice
+    - 2 tsp Dijon mustard
+    - 1/2 tsp salt
+    - 200 ml oil
+    - salt and pepper
+  instructions:
+    - Lasts 1-2 weeks
+  url: https://www.kitchenstories.com/de/rezepte/vegane-mayonnaise-mit-aquafaba
