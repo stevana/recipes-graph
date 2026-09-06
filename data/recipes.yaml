@@ -2157,3 +2157,21 @@
   instructions:
     - Lasts 1-2 weeks
   url: https://www.kitchenstories.com/de/rezepte/vegane-mayonnaise-mit-aquafaba
+
+- id: Perfect noodle sauce
+  meal:
+    - Side
+  kitchen: Asian
+  diet:
+    - Vegan
+  ingredients:
+    - 3 Tbsp light soy sauce
+    - 2 tsp dark soy sauce
+    - 2 tsp black vinegar
+    - 2 Tbsp oyster sauce
+    - 3 Tbsp hoisin sauce
+    - 1 tsp toasted sesame oil
+    - 2 Tbsp chili oil
+  source: Yeung Man
+  url: https://youtu.be/Pm0iA9wBXfE?si=uTDdSXHRubU8g14I
+
