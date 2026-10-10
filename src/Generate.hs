@@ -88,7 +88,7 @@ displayRecipe (Recipe name meals mKitchen diets ingredients_ mInstructions mSour
     displaySourceUrl :: Maybe Text -> Maybe Text -> Text
     displaySourceUrl Nothing Nothing = ""
     displaySourceUrl (Just src) Nothing = "by " <> src
-    displaySourceUrl Nothing (Just href) = "by <a href=\"" <> href <> "\">anoymous</a>"
+    displaySourceUrl Nothing (Just href) = "by <a href=\"" <> href <> "\">anonymous</a>"
     displaySourceUrl (Just src) (Just href) = "by <a href=\"" <> href <> "\">" <> src <> "</a>"
 
 h3 :: Text -> Text
